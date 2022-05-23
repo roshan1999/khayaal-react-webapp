@@ -1,1 +1,1 @@
-# khayaal-intern-react
+# Interns Khayaal Application
