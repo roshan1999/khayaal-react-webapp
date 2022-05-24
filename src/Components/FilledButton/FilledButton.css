@@ -1,0 +1,10 @@
+.btn-filled {
+  padding: 0.75rem 1.5rem;
+  border-radius: 888em;
+  background-color: var(--primary-dark);
+  border: 0;
+  color: var(--tertiary-text-color);
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+}
