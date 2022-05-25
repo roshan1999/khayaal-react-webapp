@@ -3,10 +3,13 @@
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   line-height: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .page-divider {
-  display: flex;
-  align-items: stretch;
+  width: 85%;
   border-bottom: 1px solid rgba(46, 36, 75, 0.5);
 }
 .section-heading h2 {
