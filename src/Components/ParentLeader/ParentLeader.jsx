@@ -1,6 +1,6 @@
 import LeaderDescription from "./LeaderDescription";
-
-const Lpc = (props) => {
+import "./ParentLeader.css";
+const ParentLeader = (props) => {
     const name = props.name;
     const position = props.position
     const desec = props.desec
@@ -16,4 +16,4 @@ const Lpc = (props) => {
     );
 }
  
-export default Lpc;
+export default ParentLeader;
