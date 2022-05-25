@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Navbar.css'
 
 export default function Navbar() {
+    let navigate = useNavigate();
     const [isActive, setIsActive] = useState(false);
     const toggleIsActive = (e) => {
         e.preventDefault();
@@ -11,10 +13,10 @@ export default function Navbar() {
     return (
         <div className='nav'>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a onClick={()=>navigate("/")}>Home</a></li>
+                <li><a onClick={()=>navigate("/about")}>About Us</a></li>
                 <li><a href="#">Parent Organisation</a></li>
-                <li><a href="#">Activities</a></li>
+                <li><a onClick={()=>navigate("/activities")}>Activities</a></li>
                 <li><a href="#">Members</a></li>
                 <li><a href="#">Join Us</a></li>
             </ul >

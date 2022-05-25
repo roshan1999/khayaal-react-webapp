@@ -38,6 +38,7 @@
 
 .nav li a:hover {
   color: var(--secondary-text-color);
+  cursor: pointer;
 }
 
 .nav .action-items {

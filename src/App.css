@@ -1,16 +1,13 @@
-.main-app {
+.app-container {
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 
-.main-app > .landing-intro-container {
+.app-container > .home-container {
   scroll-snap-align: start;
 }
 
-.main-app > .landing-about-container {
-  scroll-snap-align: start;
-}
-
-.main-app > .footer-main-container {
+.footer-container {
   scroll-snap-align: start;
 }
