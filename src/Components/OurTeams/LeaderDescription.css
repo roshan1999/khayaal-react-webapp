@@ -1,7 +1,6 @@
-* {
-    font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 .leaderDesc {
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     line-height: 38px;
 }
