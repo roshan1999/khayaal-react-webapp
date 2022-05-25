@@ -4,21 +4,26 @@ import './App.css'
 import React from 'react';
 import Navbar from './Navbar/Navbar'
 import LogoBox from './LogoBox/LogoBox'
-import LandingAbout from './Pages/Home/LandingAbout/LandingAbout';
-import LandingSlogan from './Pages/Home/LandingSlogan/LandingSlogan';
 import Footer from './Footer/Footer';
+import Home from './Pages/Home/Home';
+import About from './Pages/AboutUs/AboutUs';
+import Activities from './Pages/Activities/Activities';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 export default function App() {
   return (
-    <div>
-      <div className="main-app">
+    <div className='app-container'>
+      <Router>
         <LogoBox></LogoBox>
         <Navbar></Navbar>
-        <LandingSlogan />
-        <LandingAbout />
+        <Routes>
+          <Route path="/" element = {<Home />}/>
+          <Route path="/about" element = {<About />}/>
+          <Route path="/activities" element = {<Activities />} />
+        </Routes>
         <Footer />
-      </div>
+      </Router>
     </div>
   );
 }
