@@ -16,7 +16,7 @@
   
   @media (max-width: 767px) {
   
-    .landing-about-right-container .inner-heading {
+    .main-HeadingText {
       font-family: Roboto;
       font-size: 4vw;
       font-weight: bold;
@@ -27,7 +27,7 @@
   
   @media (max-width: 425px) {
    
-    .landing-about-right-container .inner-heading {
+    .main-HeadingText {
       font-family: Roboto;
       font-size: 1.5rem;
       font-weight: bold;
