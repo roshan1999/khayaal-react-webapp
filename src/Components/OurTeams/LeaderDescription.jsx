@@ -1,10 +1,10 @@
 import "./LeaderDescription.css"
-const LeaderDescription = ({name,position,desc}) => {
+const LeaderDescription = (props) => {
     return (
-        <div className="leaderDesc">
-            <h2 className="leaderName">{name}</h2>
-            <h3 className="leaderPosition">{position}</h3>
-            <p className="leaderContents">{desc}</p>
+        <div className="leader-desc">
+            <h2 className="leader-name">{props.nameText}</h2>
+            <h3 className="leader-position">{props.positionText}</h3>
+            <p className="leader-contents">{props.descText}</p>
         </div>
      );
 }
