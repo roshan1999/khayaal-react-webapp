@@ -1,0 +1,21 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", sans-serif;
+}
+.leaderDesc {
+    font-weight: 700;
+    line-height: 38px;
+}
+.leaderName {
+    font-size: 38px;
+    color: #2e244b;
+}
+.leaderPosition {
+    font-size:21px;
+    color:#885F88;
+}
+.leaderContents {
+    font-style: italic;
+    font-size: 15px;
+    color:#686868;
+    text-align: justify;
+}
