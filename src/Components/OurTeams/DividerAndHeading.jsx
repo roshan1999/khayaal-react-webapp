@@ -1,10 +1,10 @@
 import "./DividerAndHeading.css";
-const DividerAndHeading = ({ heading }) => {
+const DividerAndHeading = (props) => {
   return (
     <div className="divhead">
-      <div className="divider"></div>
-      <div className="heading">
-        <h2>{heading}</h2>
+      <div className="page-divider"></div>
+      <div className="section-heading">
+        <h2>{props.sectionHeading}</h2>
       </div>
     </div>
   );

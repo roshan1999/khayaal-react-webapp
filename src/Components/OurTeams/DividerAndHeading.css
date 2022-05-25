@@ -2,17 +2,15 @@
 .divhead {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  line-height: 38px;
+  line-height: 2.4rem;
 }
-.divider {
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 100%;
-  border: 1px solid rgba(46, 36, 75, 0.5);
+.page-divider {
+  display: flex;
+  align-items: stretch;
+  border-bottom: 1px solid rgba(46, 36, 75, 0.5);
 }
-.heading h2 {
-  font-size: 38px;
-  color: #262540;
+.section-heading h2 {
+  font-size: 2.4rem;
+  color: var(--primary-dark);
   text-align: center;
 }
