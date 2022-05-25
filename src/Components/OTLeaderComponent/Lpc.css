@@ -1,6 +1,7 @@
 .lpc{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .lpcdes{
@@ -8,6 +9,7 @@
 }
 
 .lpcimg{
+    flex-shrink: unset;
     display: flex;
     flex-wrap: wrap;
 }
