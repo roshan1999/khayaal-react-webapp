@@ -1,6 +1,7 @@
-import LeaderDescription from "./LeaderDescription";
-import "./ParentLeader.css";
-const ParentLeader = (props) => {
+import LeaderDescription from "../OurTeams/LeaderDescription.jsx";
+
+import "./ParentLeader1.css";
+const ParentLeader1 = (props) => {
     const name = props.name;
     const position = props.position
     const desec = props.desec
@@ -8,7 +9,7 @@ const ParentLeader = (props) => {
     return (  
         <div className="lpc">
             <div className="lpcdes">
-                <LeaderDescription name={name} position={position} desec={desec}/>
+                <LeaderDescription nameText={name} positionText={position} descText={desec}/>
             </div>
 
             <img className="leadimage" src={imageurl} alt="Leader's Image" />
@@ -16,4 +17,4 @@ const ParentLeader = (props) => {
     );
 }
  
-export default ParentLeader;
+export default ParentLeader1;
