@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ActivityPage from './Pages/Activities/ActivityPage/ActivityPage';
 
 export default class Activities extends Component {
   render() {

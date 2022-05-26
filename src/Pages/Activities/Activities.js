@@ -1,8 +1,14 @@
+import ActivityPage from "./ActivityPage/ActivityPage";
 import InitiativeDescription from "./Initiative-description/Initiative-description";
 
 const Activities = () => {
     return (
-        <InitiativeDescription />
+        <div className="home">
+            <InitiativeDescription />
+            <ActivityPage />
+        </div>
+        
+        
     );
 }
  

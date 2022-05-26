@@ -9,11 +9,11 @@ const InitiativeDescription = (props) => {
     return (
         <div className="Initiative-description-container">
             <div className="description-header">
-                <h1>{props.headingText}</h1>
+                <h1 className="initiativeHeading">{props.headingText}</h1>
                 {/* <h1>Hello</h1> */}
             </div>
             <div className="description-content">
-                <p>{props.contentText}</p>
+                <p className='initiativeText'>{props.contentText}</p>
                 {/* <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, labore nesciunt? Accusamus harum facere aperiam unde asperiores vero tempore delectus qui culpa, ullam, doloremque repellendus officiis eaque optio vitae nisi.
                 </p> */}
             </div>
