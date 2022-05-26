@@ -1,8 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-* {
-    font-family: "Roboto", sans-serif;
-}
-.leader-desc {
+.leaderDesc {
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     line-height: 2.4rem;
     width:40%;
