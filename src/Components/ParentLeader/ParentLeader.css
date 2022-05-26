@@ -1,0 +1,27 @@
+.lpc{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 10%;
+    margin-right: 10%;
+    gap: 10%;
+}
+
+.lpcdes{
+    flex-basis: 53%;
+}
+
+.lpcimg{
+    flex-shrink: unset;
+    display: flex;
+
+}
+.leadimage{
+
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 385.6px;
+    border: var(--primary-dark);
+    margin-top: 0.83em;
+}
