@@ -1,0 +1,38 @@
+.actintro{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.actinth{
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: .5%;
+    line-height: unset;
+
+}
+
+.actintsh{
+
+   max-width: 318.33px;
+   max-height: 37.89px;
+   height: auto;
+   width: auto;
+    
+}
+
+
+.actintpara{
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+
+    line-height: 150%;
+}

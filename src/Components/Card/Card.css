@@ -1,0 +1,51 @@
+.divider{
+    border-bottom: 2px solid rgba(46, 36, 75, 0.5);
+}
+
+.row {
+    margin: 40px 30px;
+  }
+  .container {
+    padding: 0 16px;
+  }
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  .column {
+    display: flex;
+    flex-flow: wrap;
+    float: left;
+    width: 200px;
+    height: 300px;
+    margin: 16px;
+    border-radius: 6px;
+    align-content: center;
+    padding: 8px;
+  }
+  .leftcard {
+    flex-flow: row wrap;
+    display: flex;
+    justify-content:center;
+    flex: 3.33;
+    border-radius: 21px;
+    margin:16px;
+  }
+.divider{
+    padding: 1rem;
+}
+
+@media screen and (max-width: 1160px) {
+
+
+  }
+  
+  @media (max-width: 767px) {
+  
+  
+  }
+  
+  @media (max-width: 425px) {
+   
+
+  
+  }

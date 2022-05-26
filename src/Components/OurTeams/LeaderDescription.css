@@ -1,0 +1,25 @@
+.leaderDesc {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    line-height: 2.4rem;
+    width:40%;
+}
+.leader-name {
+    font-size: 2.4rem;
+    color: var(--primary-text-color);
+}
+.leader-position {
+    font-size:1.3rem;
+    color:var(--secondary-text-color);
+}
+.leader-contents {
+    font-style: italic;
+    font-size: 0.9rem;
+    color:var(--info-text-color);
+    text-align: justify;
+}
+@media (max-width: 900px) {
+    .leader-desc {
+      width: 50%;
+    }
+  }
