@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Card from "../Card/Card";
 import DividerAndHeading from "../OurTeams/DividerAndHeading";
+import './TeamsSecComponent.css'
 
 const TeamsSecComponent = (props) => {
 
