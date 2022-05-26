@@ -8,6 +8,7 @@ import Footer from './Footer/Footer';
 import Home from './Pages/Home/Home';
 import About from './Pages/AboutUs/AboutUs';
 import Activities from './Pages/Activities/Activities';
+import Card from  './Components/Card/Card.jsx';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
@@ -22,6 +23,7 @@ export default function App() {
           <Route path="/about" element = {<About />}/>
           <Route path="/activities" element = {<Activities />} />
         </Routes>
+        <Card></Card>
         <Footer />
       </Router>
     </div>
