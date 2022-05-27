@@ -10,21 +10,25 @@ import About from './Pages/AboutUs/AboutUs';
 import Activities from './Pages/Activities/Activities';
 import Card from  './Components/Card/Card.jsx';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
+import ActivityPage from './Pages/Activities/ActivityPage/ActivityPage';
+import ActivityPage2 from './Pages/Activities/ActivityPage2/ActivityPage2';
 
 export default function App() {
   return (
     <div className='app-container'>
       <Router>
-        <LogoBox></LogoBox>
-        <Navbar></Navbar>
-        <Routes>
+        {/* <LogoBox></LogoBox>
+        <Navbar></Navbar> */}
+        
+        {/* <Routes>
           <Route path="/" element = {<Home />}/>
           <Route path="/about" element = {<About />}/>
           <Route path="/activities" element = {<Activities />} />
-        </Routes>
-        <Card></Card>
-        <Footer />
+        </Routes> */}
+        <ActivityPage />
+        <ActivityPage2 />
+        {/* <Card></Card> 
+        <Footer /> */}
       </Router>
     </div>
   );
