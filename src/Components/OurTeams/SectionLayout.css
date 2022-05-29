@@ -1,0 +1,20 @@
+.section-layout {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.cards-row {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    flex:0 0 75%;
+}
+@media (max-width:500px) {
+    .section-layout {
+        display: block;
+    }
+    .cards-row {
+        display: block;
+    }
+    
+}
