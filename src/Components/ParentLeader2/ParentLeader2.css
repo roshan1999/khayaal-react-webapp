@@ -16,7 +16,6 @@
 
 }
 .leadimage{
-
     box-sizing: border-box;
     width: auto;
     height: auto;
@@ -24,4 +23,12 @@
     max-height: 385.6px;
     border: var(--primary-dark);
     margin-top: 0.83em;
+}
+@media (max-width:800px) {
+    .lpcdes{
+        flex-basis:100%;
+    }
+    .leadimage {
+        width: 60%;
+    }
 }
