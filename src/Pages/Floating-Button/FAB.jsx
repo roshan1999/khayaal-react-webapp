@@ -1,6 +1,6 @@
 // This is not working I dont know why. It is working in sandbox(online compiler)
 import React from 'react';
-import FAB_icon from '../assets/FAB_logo.png';
+import FAB_icon from '../../assets/FAB_logo.png';
 import './FAB.css';
 
 const FAB = () => {

@@ -1,4 +1,4 @@
-import LeaderDescription from "./LeaderDescription";
+import LeaderDescription from "../OurTeams/LeaderDescription.jsx";
 import "./ParentLeader2.css";
 const ParentLeader2 = (props) => {
     const name = props.name;

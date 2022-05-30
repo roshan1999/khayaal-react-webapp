@@ -1,9 +1,11 @@
+.main-heading {
+  font-family: Roboto;
+}
 .main-HeadingText{
-    color: var(--primary-dark);
+    color: var(--primary-text-color);
     text-align: center;
     font-size: 2.5rem;
     font-weight: bold;
-    font-family: Roboto;
 }
 
 @media screen and (max-width: 1160px) {
