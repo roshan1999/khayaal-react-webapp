@@ -1,6 +1,6 @@
 .page1 {
     padding: 0;
-    margin: 0;
+    margin-top: -2rem;
     box-sizing: border-box;
     min-height: 100vh;
     min-width: 100vh;
@@ -26,6 +26,7 @@
 }
 .left img{
     background: no-repeat center / cover;
+    z-index: 1;
 }
 .right{
     width: 70%;
@@ -43,8 +44,9 @@
 }
 .right p{
     padding-left: 120px;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 25px;
+    color:var(--info-text-color);
 }
 
 @media only screen and (max-width: 768px){

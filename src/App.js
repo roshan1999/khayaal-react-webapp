@@ -7,27 +7,22 @@ import LogoBox from './LogoBox/LogoBox'
 import Footer from './Footer/Footer';
 import Home from './Pages/Home/Home';
 import About from './Pages/AboutUs/AboutUs';
-import Activities from './Pages/Activities/Activities';
-import Card from  './Components/Card/Card.jsx';
+import ActivitiesPage from './Pages/Activities/Activities';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import ActivityPage from './Pages/Activities/ActivityPage/ActivityPage';
-import ActivityPage2 from './Pages/Activities/ActivityPage2/ActivityPage2';
+
 
 export default function App() {
   return (
     <div className='app-container'>
       <Router>
         <LogoBox></LogoBox>
-        <Navbar></Navbar> 
+        <Navbar></Navbar>
         
        <Routes>
           <Route path="/" element = {<Home />}/>
           <Route path="/about" element = {<About />}/>
-          <Route path="/activities" element = {<Activities />} />
+          <Route path="/activities" element = {<ActivitiesPage />} />
         </Routes> 
-        <ActivityPage />
-        <ActivityPage2 />
-        <Card></Card> 
         <Footer />
       </Router>
     </div>
