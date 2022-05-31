@@ -9,6 +9,7 @@ import Home from './Pages/Home/Home';
 import About from './Pages/AboutUs/AboutUs';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import OurTeams from './Pages/OurTeams/OurTeams';
+import ActivitiesPage from "../src/Pages/Activities/Activities"
 
 export default function App() {
   return (
@@ -20,7 +21,7 @@ export default function App() {
         <Routes>
           <Route path="/" element = {<Home />}/>
           <Route path="/about" element = {<About />}/>
-          <Route path="/activities" element = {<Activities />} />
+          <Route path="/activities" element = {<ActivitiesPage />} />
           <Route path="/members" element = {<OurTeams/>}/>
           
         </Routes>
