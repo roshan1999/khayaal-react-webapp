@@ -17,7 +17,7 @@ export default function Navbar() {
                 <li><a onClick={()=>navigate("/about")}>About Us</a></li>
                 <li><a href="#">Parent Organisation</a></li>
                 <li><a onClick={()=>navigate("/activities")}>Activities</a></li>
-                <li><a href="#">Members</a></li>
+                <li><a onClick={()=>navigate("/members")}>Members</a></li>
                 <li><a href="#">Join Us</a></li>
             </ul >
             <div className='action-items'>

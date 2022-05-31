@@ -1,0 +1,8 @@
+.our-teams-container {
+    display: flex;
+    flex-flow: column wrap;
+    gap:1rem;
+    padding-top:7rem;
+    padding-bottom:5rem;
+  }
+  
