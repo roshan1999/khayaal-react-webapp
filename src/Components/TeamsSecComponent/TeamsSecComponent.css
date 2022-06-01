@@ -1,3 +1,4 @@
+.flipCard{margin-top: 2%;}
 @media screen and (min-width: 40em) {
     .cards {
         margin-left: 10%;
@@ -5,7 +6,26 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        column-gap: 10%;
         
     }
 
+    .flipCard {
+        flex: 0 1 calc(50% - 1em);
+        margin-top: 5%;
+        
+    }
+}
+
+@media screen and (min-width: 60em) {
+
+    .flipCard {
+        margin-top: 5%;
+        flex: 0 1 calc(25% - 1em);
+        
+
+       
+    }
+
+    
 }
