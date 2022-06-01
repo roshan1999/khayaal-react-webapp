@@ -33,7 +33,7 @@ export default function Card(props) {
             <center><div className="divider-bottom">
               <span></span>
             </div></center>
-            <center><button className="knowMoreBtn">{knowmorebtn}</button></center>
+            <center><button className="knowMoreBtn">Know More</button></center>
           </div>
         </div>
     </div>
