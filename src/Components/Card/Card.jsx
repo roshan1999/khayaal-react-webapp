@@ -16,8 +16,10 @@ export default function Card(props) {
             <center><div className="divider">
                 <span></span>
               </div></center>
+              <div>
               <h2 className="cardName">{name}</h2>
               <p className="cardTitle">{position}</p>
+              </div>
             </div>
           </div>
 
