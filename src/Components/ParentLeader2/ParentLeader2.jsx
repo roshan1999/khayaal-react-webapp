@@ -7,7 +7,8 @@ const ParentLeader2 = (props) => {
     const imageurl = props.imageurl
     return (  
         <div className="lpc">
-            <img className="leadimage" src={imageurl} alt="Leader's Image" />
+      <div className="lpc-image-holder">
+            <img className="leadimage" src={imageurl} alt="Leader's Image" /></div>
             <div className="lpcdes">
                 <LeaderDescription nameText={name} positionText={position} descText={desec}/>
             </div>
