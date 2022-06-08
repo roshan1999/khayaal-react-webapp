@@ -3,6 +3,8 @@
     /* height: 100vh; */
     width: 100%;
     flex-direction: row;
+    margin-top: 60px;
+    margin-bottom: 70px;
   }
   .rightComp {
     display: flex;
@@ -31,6 +33,7 @@
     .componentContainer{
           flex-direction: column;
           align-items: center;
+          
       }
       .leftComp{
           align-items: center;
