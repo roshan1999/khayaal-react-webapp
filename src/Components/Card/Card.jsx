@@ -7,18 +7,18 @@ export default function Card(props) {
   const position=props.position;
   const quote = props.quote
       return (
-        <div className="card">
-          <div className="flipCard">
+        <center>
+      <div className="flipCard">
         <div className="flipCard-inner">
           <div className="flipCard-front">
-            <img src={imageurl} alt="Jane"></img>
+            <img className="memimg" src={imageurl} alt="Jane"></img>
             <div className="container">
             <center><div className="divider">
                 <span></span>
               </div></center>
               <div>
-              <h2 className="cardName">{name}</h2>
-              <p className="cardTitle">{position}</p>
+              <div className="cardName"><h2>{name}</h2></div>
+              <div className="cardTitle">{position}</div>
               </div>
             </div>
           </div>
@@ -27,7 +27,7 @@ export default function Card(props) {
             <center><div className="divider-top">
               <span></span>
             </div></center>
-            <p className="quoteText">{quote}</p>
+            <div className="quoteText">{quote}</div>
             <center><div className="divider-bottom">
               <span></span>
             </div></center>
@@ -35,7 +35,7 @@ export default function Card(props) {
           </div>
         </div>
     </div>
-        </div>
+    </center>
     // <div class="card">
 
     //                         <img src={imageurl} alt="Jane"></img>
