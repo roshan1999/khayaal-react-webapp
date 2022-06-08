@@ -1,7 +1,7 @@
 import MainTitle from '../../Components/MainTitle/MainTitle';
 import ParentLeader1 from '../../Components/ParentLeader1/ParentLeader1'
 import ParentLeader2 from '../../Components/ParentLeader2/ParentLeader2'
-import member2 from '../../assets/member2.svg';
+import leader from '../../assets/leader.png';
 import person from '../../assets/person.png';
 import './OurTeams.css';
 import TeamsSecComponent from '../../Components/TeamsSecComponent/TeamsSecComponent';
@@ -19,8 +19,8 @@ const OurTeams = () => {
     return (
         <div className="our-teams-container">
             <MainTitle headingText="Our Teams"></MainTitle>
-            <ParentLeader1 name="Name" position="Position" desec={loremText} imageurl={member2}></ParentLeader1>
-            <ParentLeader2 name="Name" position="Position" desec={loremText} imageurl={member2}></ParentLeader2>
+            <ParentLeader1 name="Name" position="Position" desec={loremText} imageurl={leader}></ParentLeader1>
+            <ParentLeader2 name="Name" position="Position" desec={loremText} imageurl={leader}></ParentLeader2>
             <br/><br/>
             <FAB></FAB>
             <TeamsSecComponent sectionHeading="Design Team" details={details}></TeamsSecComponent>
