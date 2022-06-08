@@ -14,10 +14,9 @@ const TeamsSecComponent = (props) => {
 
         <div className="cards">
 
-            {details.map(person => (
-
-                <Card name={person.name} imageurl={person.imageurl} position={person.position} quote={person.quote} />
-            ))}
+            {details.map((person) => {
+                return <Card name={person.name} imageurl={person.imageurl} position={person.position} quote={person.quote} />
+            })}
     
         </div>
     </>
