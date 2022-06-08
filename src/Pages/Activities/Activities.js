@@ -7,6 +7,7 @@ import Picture from "../../assets/image39.png";
 import Picture2 from "../../assets/image34.png";
 import Picture3 from "../../assets/image37.png";
 import Picture4 from "../../assets/image38.png";
+import Page2Component from './Page2Component';
 import './Activities.css'
 
 const Activities = () => {
@@ -42,6 +43,7 @@ const Activities = () => {
         Picture2={Picture4}
         ></ActivityPage2>
         <FAB></FAB>
+        <Page2Component />
         </div>
     );
 }

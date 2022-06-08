@@ -1,0 +1,55 @@
+.componentContainer{
+    display: flex;
+    /* height: 100vh; */
+    width: 100%;
+    flex-direction: row;
+  }
+  .rightComp {
+    display: flex;
+    margin-top: 100px;
+    margin-left: 200px;
+  }
+  .rightComp img{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    height: 340px;
+    background: no-repeat center / cover;
+    border: 8px solid #E5E5E5;
+  }
+  .leftComp{
+    margin-left: 250px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  
+  @media only screen and (max-width: 768px){
+    .componentContainer{
+          flex-direction: column;
+          align-items: center;
+      }
+      .leftComp{
+          align-items: center;
+          width: 100%;
+          margin: 0;
+          overflow-x: hidden;
+      }
+      .rightComp{
+        margin-top: 0;
+        margin-left: 0;
+        align-items: center;
+        justify-content: center;
+      }
+      .rightComp img{
+          align-items: center;
+          width: 70%;
+          height: 60%;
+          margin: 0;
+          overflow-x: hidden;
+      }
+  }
+  
