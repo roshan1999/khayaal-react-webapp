@@ -11,8 +11,8 @@
   .rightComp {
     display: flex;
     margin-top: 100px;
-    margin-left: 200px;
-    margin-right: 100px;
+    margin-right: 200px;
+    margin-left: 100px;
   }
   .rightComp img{
     display: flex;
@@ -26,9 +26,10 @@
     margin-left: 250px;
     margin-right: 40px;
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
   }
   .leftHeadingComp{
     font-family: 'Roboto';
