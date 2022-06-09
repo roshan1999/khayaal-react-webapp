@@ -53,6 +53,14 @@
 	justify-content: flex-end;
 	padding: 5px;
 }
+.fab-options li a {
+	text-decoration: none;
+	color: var(--primary-dark);
+}
+.fab-options li a:hover {
+	text-decoration: underline;
+	color: var(--secondary-text-color);
+}
 
 .fab-options-label {
 	padding: 7px 5px;

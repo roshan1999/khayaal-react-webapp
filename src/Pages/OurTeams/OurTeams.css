@@ -2,7 +2,13 @@
     display: flex;
     flex-flow: column wrap;
     gap:1rem;
-    padding-top:4rem;
+    padding-top:8rem;
     padding-bottom:5rem;
   }
-  
+:target {
+  padding-top: 8rem;
+}
+:link :visited :active {
+  padding-top:0;
+  scroll-padding-top:0;
+}

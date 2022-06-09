@@ -16,18 +16,28 @@ const OurTeams = () => {
         {name:"Name", imageurl:person, position:"Position", quote:loremText},
         {name:"Name", imageurl:person, position:"Position", quote:loremText}
     ];
+    const FAB_links=[
+        {ref:"/members", title:"Top"},
+        {ref:"#leaders", title:"Leaders"},
+        {ref:"#design", title:"Design Team"},
+        {ref:"#content", title:"Content Team"},
+        {ref:"#finance", title:"Finance Team"},
+    ]
     return (
         <div className="our-teams-container">
             <MainTitle headingText="Our Teams"></MainTitle>
+            <div id="leaders">
             <ParentLeader1 name="Name" position="Position" desec={loremText} imageurl={leader}></ParentLeader1>
             <ParentLeader2 name="Name" position="Position" desec={loremText} imageurl={leader}></ParentLeader2>
+            </div>
             <br/><br/>
-            <FAB></FAB>
-            <TeamsSecComponent sectionHeading="Design Team" details={details}></TeamsSecComponent>
+            <FAB FAB_links={FAB_links}></FAB>
+            <div id="design"><TeamsSecComponent sectionHeading="Design Team" details={details}></TeamsSecComponent></div>
             <br/><br/> 
-            <TeamsSecComponent sectionHeading="Content Team" details={details}></TeamsSecComponent>
+            <div id="content"><TeamsSecComponent sectionHeading="Content Team" details={details}></TeamsSecComponent></div>
             <br/><br/>
-            <TeamsSecComponent sectionHeading="Finance Team" details={details}></TeamsSecComponent> 
+            <div id="finance"><TeamsSecComponent sectionHeading="Finance Team" details={details}></TeamsSecComponent></div>
+             
         </div>
     );
 }
