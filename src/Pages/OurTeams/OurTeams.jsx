@@ -25,9 +25,9 @@ const OurTeams = () => {
     ]
     return (
         <div className="our-teams-container">
-            <MainTitle headingText="Our Teams"></MainTitle>
+            <MainTitle headingText="Our Leaders"></MainTitle>
             <div id="leaders">
-            <ParentLeader1 name="Name" position="Position" desec={loremText} imageurl={leader}></ParentLeader1>
+            <ParentLeader1 name="Name" position="Position" desec={loremText} imageurl={leader}></ParentLeader1> <br/>
             <ParentLeader2 name="Name" position="Position" desec={loremText} imageurl={leader}></ParentLeader2>
             </div>
             <br/><br/>

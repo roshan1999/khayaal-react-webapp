@@ -102,8 +102,8 @@
         text-align: center;
     }
     .lpc-image-holder img {
-        width:50vh;
-        height:40vh;
+        width:60vh;
+        height:47.5vh;
         flex:1;
     } 
 }
