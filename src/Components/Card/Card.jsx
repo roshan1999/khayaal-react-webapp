@@ -12,7 +12,7 @@ export default function Card(props) {
         <div className="flipCard-inner">
           <div className="flipCard-front">
             <img className="memimg" src={imageurl} alt="Jane"></img>
-            <div className="container">
+            <div className="card-parent-container">
             <center><div className="divider">
                 <span></span>
               </div></center>
@@ -40,7 +40,7 @@ export default function Card(props) {
 
     //                         <img src={imageurl} alt="Jane"></img>
 
-    //                         <div class="container">
+    //                         <div class="card-parent-container">
 
     //                                 <div class="divider">
 
