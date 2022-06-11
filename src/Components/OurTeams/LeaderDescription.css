@@ -18,8 +18,8 @@
     color:var(--info-text-color);
     text-align: justify;
 }
-@media (max-width: 700px) {
-    .leader-contents {
-      text-align: center;
+/* @media (max-width: 900px) {
+    .leader-desc {
+      width: 50%;
     }
-  }
+  } */
