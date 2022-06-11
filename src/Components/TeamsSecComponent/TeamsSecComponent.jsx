@@ -2,6 +2,7 @@ import { useState } from "react";
 import Card from "../Card/Card";
 import DividerAndHeading from "../OurTeams/DividerAndHeading";
 import './TeamsSecComponent.css'
+import React from 'react';
 
 const TeamsSecComponent = (props) => {
 
@@ -14,9 +15,10 @@ const TeamsSecComponent = (props) => {
 
         <div className="cards">
 
-            {details.map((person) => {
-                return <Card name={person.name} imageurl={person.imageurl} position={person.position} quote={person.quote} />
-            })}
+            {details.map(person => (
+
+                <Card name={person.name} imageurl={person.imageurl} position={person.position} quote={person.quote} />
+            ))}
     
         </div>
     </>

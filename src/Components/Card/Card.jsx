@@ -6,8 +6,11 @@ export default function Card(props) {
   const imageurl=props.imageurl;
   const position=props.position;
   const quote = props.quote
-      return (
-        <center>
+  const knowmorebtn = props.knowmorebtn;
+
+
+    return (
+      <center>
       <div className="flipCard">
         <div className="flipCard-inner">
           <div className="flipCard-front">
@@ -36,26 +39,6 @@ export default function Card(props) {
         </div>
     </div>
     </center>
-    // <div class="card">
-
-    //                         <img src={imageurl} alt="Jane"></img>
-
-    //                         <div class="container">
-
-    //                                 <div class="divider">
-
-    //                                     <span></span>
-
-    //                                 </div>
-
-    //                             <h2 class="cardName">Jane Doe</h2>
-
-    //                             <p class="cardTitle">CEO and Founder</p>
-
-    //                         </div>
-
-    //                 </div>
-      
     );
   }
  
