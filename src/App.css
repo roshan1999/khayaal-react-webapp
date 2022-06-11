@@ -4,10 +4,10 @@
   height: 100vh;
 }
 
-.app-container > .home-container {
+/* .app-container > .home-container {
   scroll-snap-align: start;
 }
 
 .footer-container {
   scroll-snap-align: start;
-}
+} */
