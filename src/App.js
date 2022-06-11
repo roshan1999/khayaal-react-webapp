@@ -10,7 +10,7 @@ import About from './Pages/AboutUs/AboutUs';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import OurTeams from './Pages/OurTeams/OurTeams';
 import ActivitiesPage from "../src/Pages/Activities/Activities"
-
+import DonatePage from './Pages/Donate/DonatePage';
 export default function App() {
   return (
     <div className='app-container'>
@@ -23,7 +23,7 @@ export default function App() {
           <Route path="/about" element = {<About />}/>
           <Route path="/activities" element = {<ActivitiesPage />} />
           <Route path="/members" element = {<OurTeams/>}/>
-          
+          <Route path="/donate" element = {<DonatePage/>}/>
         </Routes>
       </Router>
     </div>
