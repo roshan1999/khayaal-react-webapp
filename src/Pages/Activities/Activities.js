@@ -11,6 +11,7 @@ import './Activities.css'
 import AboutActivities from './About-activities/About-activities';
 import pic1 from "../../assets/Activity-Image2.png";
 import bg from "../../assets/Activity-Page-Bg1.png";
+import ActivityComponent from './ActivityComponent/ActivityComponent';
 
 const Activities = () => {
     const intro="A beautiful thought can change the world. The last time you told someone it's going to be okay? Yes. That. This community is formed by a group of young individuals, who care about the future of this society."
@@ -44,7 +45,8 @@ const Activities = () => {
         // body2 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec egestas sapien, et convallis augue. Pellentesque ut tortor pulvinar, iaculis felis ut, dapibus enim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas vel semper ligula, a dictum felis. Sed efficitur mi lacinia, tempus est et, tempus felis. Proin tincidunt, diam porta pretium fringilla, tellus arcu pretium purus, vitae posuere neque arcu sit amet nisl. Aliquam ultrices vehicula ex. "
         // Picture2={Picture4}
         // ></ActivityPage2> */
-        <AboutActivities bg= {bg} color="white" pic={pic1} heading = "Activity" description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, dapibus enim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas vel semper ligula, a dictum felis. Sed efficitur mi lacinia, tempus est et, tempus felis. Proin tincidunt, diam porta pretium fringilla, tellus arcu pretium purus, vitae posuere neque arcu sit amet nisl. Aliquam ultrices vehicula ex. "/>
+        // <AboutActivities bg= {bg} color="white" pic={pic1} heading = "Activity"></AboutActivities>
+        <ActivityComponent />
         // <FAB />
         // </div>
     );

@@ -1,0 +1,114 @@
+.componentContainer{
+    display: flex;
+    /* height: 100vh; */
+    width: 100%;
+    flex-direction: row;
+    margin-top: 60px;
+    margin-bottom: 70px;
+    justify-content: center;
+    align-items: center;
+  }
+  .rightComp {
+    display: flex;
+    /* margin-top: 100px;
+    margin-right: 200px;
+    margin-left: 100px; */
+    flex: 1;
+  }
+
+  .rightComp img{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 43vw;
+    background: no-repeat center / cover;
+    border: 8px solid #E5E5E5;
+  }
+  .leftComp{
+    /* margin-left: 250px;
+    margin-right: 40px; */
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .leftHeadingComp{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+    /* or 127% */
+    display: flex;
+    align-items: center;
+    color: #262540;
+  }
+  .leftContentComp{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 38px;
+    /* or 173% */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #876186;
+    flex-wrap: nowrap;
+    flex-shrink: 1;
+  }
+
+  @media only screen and (max-width: 768px){
+    .componentContainer{
+          flex-direction: column;
+          align-items: center;
+
+      }
+      .leftComp{
+          align-items: center;
+          width: 100%;
+          margin: 0;
+          justify-content: flex-start;
+      }
+      .rightComp{
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        align-items: center;
+        justify-content: center;
+      }
+      .rightComp img{
+          align-items: center;
+          width: 70%;
+          height: 60%;
+          margin: 0;
+      }
+      .leftHeadingComp{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 20px;
+        margin: 0;
+        /* or 127% */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #262540;
+      }
+      .leftContentComp{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        /* line-height: 20px; */
+  
+        /* or 173% */
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        color: #876186;
+      }
+  }
+  
