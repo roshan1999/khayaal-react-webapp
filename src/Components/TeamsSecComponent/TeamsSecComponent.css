@@ -1,49 +1,27 @@
-.flipCard{margin: 2%;
-  flex-basis: 33.3333;}
+.flexitemot{
+ 
+  flex-basis: 33.3333333333%;
+}
   .cards{
-    column-gap: 15%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    margin-left: 10%;
-    margin-right: 10%;
+    row-gap: 1.5rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  /* @media screen and (min-width: 40em) {
+    justify-content: flex-start}
+
+
+   @media screen and (max-width: 624px) {
       .cards {
          
-          flex-wrap: wrap;
+          
           justify-content: space-evenly;
-          flex-shrink: 1;
           
-      }
-  
-      .flipCard {
-          flex: 0 1 calc(50% - 1em);
-          margin-top: 5%;
           
-      }
-  } */
-  
-  /* @media screen and (min-width: 60em) {
-  
-      .flipCard {
-          margin-top: 5%;
-          flex: 0 1 calc(25% - 1em);
-          
-  
-         
-      }
+      }}
   
       
-  } */
   
   @media screen and (max-width:1280px) {
-    .cards{
-      margin-left: 5%;
-      margin-right: 5%;
-    }
+  
   
       .flipCard{
     
@@ -184,3 +162,4 @@
       padding-bottom: 0%;
     }
   } */
+

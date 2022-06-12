@@ -16,3 +16,12 @@
   color: var(--primary-dark);
   text-align: center;
 }
+
+@media screen and (max-width:425px){
+
+  .section-heading h2{
+
+    font-size: 8vw;
+  }
+
+}

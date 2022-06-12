@@ -8,7 +8,7 @@ const TeamsSecComponent = (props) => {
     const [details, setDetails] = useState(props.details)
 
     return (
-    <>
+    <div className="secc">
         <DividerAndHeading sectionHeading={sectionHeading} />
 
         <div  className="cards">
@@ -18,7 +18,7 @@ const TeamsSecComponent = (props) => {
             })}
     
         </div>
-    </>
+    </div>
     
 
        

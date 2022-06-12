@@ -8,7 +8,7 @@ export default function Card(props) {
   const quote = props.quote;
   const knowmore=props.knowmore;
       return (
-        <center>
+        <center className="flexitemot">
       <div className="flipCard">
         <div className="flipCard-inner">
           <div className="flipCard-front">
