@@ -25,7 +25,7 @@ import st1 from '../../assets/ourteams/st/st1.png'
 
 
 import CO_F from '../../assets/ourteams/Leaders/CO_F.png';
-import Founder from '../../assets/Leaders/founder.png';
+import Founder from '../../assets/ourteams/Leaders/founder.png';
 import './OurTeams.css';
 import TeamsSecComponent from '../../Components/TeamsSecComponent/TeamsSecComponent';
 import FAB from '../Floating-Button/FAB';
