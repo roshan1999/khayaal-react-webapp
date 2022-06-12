@@ -11,7 +11,8 @@ const AboutActivities = (props) => {
                     <div className="right">
                         <div className="content">
                             <h1 style={{ color: props.headingcolor }}>{props.heading}</h1>
-                            <p style={{ color: props.contentcolor }}>{props.description}</p><br />
+                            <span style={{ color: props.contentcolor }}>{props.description}</span><br />
+                            <p style={{ color: props.contentcolor }}>{props.seconddescription}</p><br />
                         </div>
                     </div>
                 </div>
