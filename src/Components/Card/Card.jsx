@@ -5,9 +5,10 @@ export default function Card(props) {
   const name=props.name;
   const imageurl=props.imageurl;
   const position=props.position;
-  const quote = props.quote
+  const quote = props.quote;
+  const knowmore=props.knowmore;
       return (
-        <center>
+        <center className="flexitemot">
       <div className="flipCard">
         <div className="flipCard-inner">
           <div className="flipCard-front">
