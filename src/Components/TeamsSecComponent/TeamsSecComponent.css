@@ -1,3 +1,4 @@
+
 .flexitemot{
  
   flex-basis: 33.3333333333%;
@@ -155,6 +156,13 @@
     }
   }
   
+
+  @media screen and (max-width:425px){
+
+    .flexitemot{
+      flex-basis: 100%;
+    }
+  }
   
   /* @media screen and (max-width:768px){
     .cards{

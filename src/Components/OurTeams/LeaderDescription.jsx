@@ -5,7 +5,7 @@ const LeaderDescription = (props) => {
         <div className="leader-desc">
             <h2 className="leader-name">{props.nameText}</h2>
             <h3 className="leader-position">{props.positionText}</h3>
-           <center> <p className="leader-contents">{props.descText}</p></center>
+           <center> <p className="leader-contents">{props.descText}<b className="boldt">{props.bold}</b></p></center>
         </div>
      );
 }
