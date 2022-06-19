@@ -12,7 +12,7 @@
     font-size:1.3rem;
     color:var(--secondary-text-color);
 }
-.leader-contents {
+.leader-contents  {
     font-style: italic;
     font-size: 0.9rem;
     color:var(--info-text-color);

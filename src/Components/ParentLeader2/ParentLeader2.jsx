@@ -10,7 +10,7 @@ const ParentLeader2 = (props) => {
         <div className="lpc-2">
             <img className="leadimage-2" src={imageurl} alt="Leader's Image" />
             <div className="lpcdes-2">
-                <LeaderDescription nameText={name} positionText={position} descText={desec}/>
+                <LeaderDescription nameText={name} bold={props.bold} positionText={position} descText={desec}/>
             </div>
           </div>
     );

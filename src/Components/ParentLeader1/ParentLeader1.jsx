@@ -10,7 +10,7 @@ const ParentLeader1 = (props) => {
     return (  
         <div className="lpc">
             <div className="lpcdes">
-                <LeaderDescription nameText={name} positionText={position} descText={desec}/>
+                <LeaderDescription nameText={name} bold={props.bold} positionText={position} descText={desec}/>
             </div>
 
             <img className="leadimage" src={imageurl} alt="Leader's Image" />
