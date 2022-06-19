@@ -1,54 +1,53 @@
-// import MainTitle from '../../Components/MainTitle/MainTitle';
-// import ActIntroSec from '../../Components/ActIntroSec/ActIntroSec'
-// import ActivityPage from './ActivityPage/ActivityPage'
-// import ActivityPage2 from './ActivityPage2/ActivityPage2'
-// import FAB from '../Floating-Button/FAB'
-// import Picture from "../../assets/image39.png";
-// import Picture2 from "../../assets/image34.png";
-// import Picture3 from "../../assets/image37.png";
-// import Picture4 from "../../assets/image38.png";
 import './Activities.css'
 import AboutActivities from './About-activities/About-activities';
-import pic1 from "../../assets/Activity-Image2.png";
+import pic1 from "../../assets/Activity-Image1.png";
+import pic2 from "../../assets/Activity-Image2.png";
+import pic3 from "../../assets/Activity-Image3.png";
 import bg from "../../assets/Activity-Page-Bg1.png";
+import bg2 from "../../assets/Activity-Page-Bg2.png";
 import ActivityComponent from './ActivityComponent/ActivityComponent';
 
 const Activities = () => {
-    const intro="A beautiful thought can change the world. The last time you told someone it's going to be okay? Yes. That. This community is formed by a group of young individuals, who care about the future of this society."
+   
     return (
-        // <div className="activitycontainer">
-        /* //     <MainTitle headingText="Activities"></MainTitle>
-        //     <ActIntroSec actIntro="A thought for"  */
-        /* //     actIntroPara={intro}
-        //     actIntroSubPara="Coming from privileged backgrounds, we understand that there are various problems we never face but we know society as a whole is privy to. 
-        //     We believe that a human is not made by the things he does for himself but by the things he is willing to do for others.  
-        //     With all the love and care that we have, we want to bring a change in the lives of people, in any and every way possible."
-        //     >
-        // </ActIntroSec> */
-        /* // <ActivityPage 
-        // Picture={Picture}
-        // heading = "Education Campaign"
-        // body = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec egestas sapien, et convallis augue. Pellentesque ut tortor pulvinar, iaculis felis ut, dapibus enim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas vel semper ligula, a dictum felis. Sed efficitur mi lacinia, tempus est et, tempus felis. Proin tincidunt, diam porta pretium fringilla, tellus arcu pretium purus, vitae posuere neque arcu sit amet nisl. Aliquam ultrices vehicula ex. "
-        // ></ActivityPage>
-        // <ActivityPage2
-        // heading2 = "Covid-19 Force"
-        // body2 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec egestas sapien, et convallis augue. Pellentesque ut tortor pulvinar, iaculis felis ut, dapibus enim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas vel semper ligula, a dictum felis. Sed efficitur mi lacinia, tempus est et, tempus felis. Proin tincidunt, diam porta pretium fringilla, tellus arcu pretium purus, vitae posuere neque arcu sit amet nisl. Aliquam ultrices vehicula ex. "
-        // Picture2={Picture2}
-        // ></ActivityPage2>
-        //  <ActivityPage 
-        // Picture={Picture3}
-        // heading = "Clothes Donation Drive"
-        // body = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec egestas sapien, et convallis augue. Pellentesque ut tortor pulvinar, iaculis felis ut, dapibus enim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas vel semper ligula, a dictum felis. Sed efficitur mi lacinia, tempus est et, tempus felis. Proin tincidunt, diam porta pretium fringilla, tellus arcu pretium purus, vitae posuere neque arcu sit amet nisl. Aliquam ultrices vehicula ex. "
-        // ></ActivityPage>
-        // <ActivityPage2
-        // heading2 = "Feed The Paws"
-        // body2 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec egestas sapien, et convallis augue. Pellentesque ut tortor pulvinar, iaculis felis ut, dapibus enim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas vel semper ligula, a dictum felis. Sed efficitur mi lacinia, tempus est et, tempus felis. Proin tincidunt, diam porta pretium fringilla, tellus arcu pretium purus, vitae posuere neque arcu sit amet nisl. Aliquam ultrices vehicula ex. "
-        // Picture2={Picture4}
-        // ></ActivityPage2> */
-        // <AboutActivities bg= {bg} color="white" pic={pic1} heading = "Activity"></AboutActivities>
+        <div className="activities-page">
         <ActivityComponent />
+        <AboutActivities
+            headingcolor="var(--primary-dark)" 
+            contentcolor="var(--info-text-color)" 
+            pic={pic1} heading = "Education Campaign" 
+            description = '"A pen, book & mentor can change the world."'
+            seconddescription = "We strongly believe that education opens the doors for innumerable opportunities, but sadly not all children out there get it. To be their mentor and guide was an amazing opportunity for us because - “Jab padhega India tabhi toh badhega India.” We at Khayaal are teaching more than 75 students currently, starting from basic subjects like English and Math to important lessons such as morals and ethical values! Team-Khayaal is putting all the effort to make their future brighter and better"
+        />
+        <AboutActivities
+            bg= {bg} 
+            headingcolor="white" 
+            pic={pic2} heading = "Covid Taskforce " 
+            description = '"A helping hand can save lives."'
+            seconddescription = "When you are determined to help, it's surprising the things that you can do! We wanted to support our nation in the tough times of the COVID-19 outbreak and thus we helped the patients to find medicines, hospitals, oxygen cylinders etc. according to their requirements. It was a tough time but we were glad to save so many lives."
+         />
+          <AboutActivities
+            headingcolor="var(--primary-dark)" 
+            contentcolor="var(--info-text-color)" 
+            pic={pic3} heading = "Donation Drive" 
+            description = '"A piece of clothing, for peace of mind."'
+            seconddescription = "We only use 40% of our wardrobe. Why not utilize the 60% for individuals who sleep unclothed? So, Team Khayaal decided to express their solidarity with those less fortunate than us by donating clothes. We successfully donated more than 4000+ clothes in places like Calcutta, South Bombay, Andheri, Mulund, Kanpur, Uttarakhand, Andheri, thereby spreading coziness with others and bringing a smile to their face."
+        />
+         <AboutActivities
+            bg= {bg2} 
+            headingcolor="white" 
+            pic={pic2} heading = "Women of Khayaal" 
+            seconddescription = "Every 3 in 5 women get harassed. Each day, 92 women get raped, that is one woman in 15 minutes! Our society failed to create a safe space for women. They go through a lot each day. Sexist remarks, victim-blaming, Abuse & a lot more. This campaign was to bring attention to the same."
+         />
+         <AboutActivities
+            headingcolor="var(--primary-dark)" 
+            contentcolor="var(--info-text-color)" 
+            pic={pic3} heading = "Feed The Paws" 
+            description = '"A wiggle for their paws."'
+            seconddescription = "We want to work for stray animals with whom we share our mother earth. We aim to provide them with the bare minimum and protect them whilst we can. We will be collecting leftovers from hotels and restaurants so that these leftovers can feed strays."
+          />
+         </div>
         // <FAB />
-        // </div>
     );
 }
  

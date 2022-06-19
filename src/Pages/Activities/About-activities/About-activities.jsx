@@ -8,10 +8,11 @@ const AboutActivities = (props) => {
                     <div className="left">
                         <img src={props.pic} alt="" />
                     </div>
-                    <div className="right" style={{ color: props.color }}>
+                    <div className="right">
                         <div className="content">
-                            <h1>{props.heading}</h1>
-                            <p>{props.description}</p><br />
+                            <h1 style={{ color: props.headingcolor }}>{props.heading}</h1>
+                            <span style={{ color: props.contentcolor }}>{props.description}</span><br />
+                            <p style={{ color: props.contentcolor }}>{props.seconddescription}</p><br />
                         </div>
                     </div>
                 </div>

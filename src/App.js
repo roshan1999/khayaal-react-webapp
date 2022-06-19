@@ -25,6 +25,7 @@ export default function App() {
           <Route path="/members" element = {<OurTeams/>}/>
           <Route path="/donate" element = {<DonatePage/>}/>
         </Routes>
+        <Footer />
       </Router>
     </div>
   );
