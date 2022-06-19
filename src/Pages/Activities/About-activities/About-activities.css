@@ -32,8 +32,9 @@ section {
 .left > img {
   max-width: 100%;
   max-height: 100%;
-  border: 8px solid #f3f4ed;
+  border: 8px solid var(--tertiary-text-color);
   object-fit: contain;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .right {
   font-family: 'Roboto', sans-serif;
@@ -44,7 +45,7 @@ section {
   justify-content: center;
   padding: 30px;
   padding-right: 0;
-  color: white;
+  color: var(--background-color);
   
   /* background-color: #885f88; */
 }
@@ -74,7 +75,7 @@ section {
   font-size: 15px;
 }
 
-@media only screen and (max-width: 868px) {
+@media (max-width: 868px) {
   .container {
     flex-direction: column;
     width: 100%;
