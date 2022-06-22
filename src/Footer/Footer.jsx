@@ -14,8 +14,8 @@ function Footer() {
             <div className="footer-container">
                 <div className="footer-contact-container">
                     <span>Contact Us</span>
-                    <span>Number</span>
-                    <span>email@gmail.com</span>
+                    <span>+91 93247 90295</span>
+                    <span>teamkhayaal@gmail.com</span>
                 </div>
                 <div className="footer-logo-container">
                     {imgList.map((logo, index) => {
