@@ -3,7 +3,8 @@ import AboutActivities from './About-activities/About-activities';
 import pic1 from "../../assets/activity/khayaal-activity-1.png";
 import pic2 from "../../assets/activity/khayaal-activity-2.png";
 import pic3 from "../../assets/activity/khayaal-activity-3.png";
-import pic5 from "../../assets/activity/khayaal-activity-5.png";
+// import pic5 from "../../assets/activity/khayaal-activity-5.png";
+import pic6 from "../../assets/activity/khayaal-activity-6.jpeg";
 import bg from "../../assets/Activity-Page-Bg1.png";
 import bg2 from "../../assets/Activity-Page-Bg2.png";
 import womenAtKhayaal from '../../assets/activity/women-at-khayaal.png';
@@ -44,7 +45,7 @@ const Activities = () => {
          <AboutActivities
             headingcolor="var(--primary-dark)" 
             contentcolor="var(--info-text-color)" 
-            pic={pic5} heading = "Feed The Paws" 
+            pic={pic6} heading = "Feed The Paws" 
             description = '"A wiggle for their paws."'
             seconddescription = "We want to work for stray animals with whom we share our mother earth. We aim to provide them with the bare minimum and protect them whilst we can. We will be collecting leftovers from hotels and restaurants so that these leftovers can feed strays."
           />
