@@ -54,10 +54,8 @@
 .leadimage-2{
 
     box-sizing: border-box;
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 385.6px;
+    width: 33vw;
+    height: 27vw;
     border: 8px solid var(--primary-dark);
-    margin-top: 0.83em;
+    margin-top: 0;
 }

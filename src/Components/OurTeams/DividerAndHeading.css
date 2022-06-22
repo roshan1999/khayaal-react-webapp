@@ -1,7 +1,7 @@
 .divhead {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  line-height: 2.4rem;
+  line-height: 2.4vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,7 +12,7 @@
   border-bottom: 1px solid rgba(46, 36, 75, 0.5);
 }
 .section-heading h2 {
-  font-size: 2.4rem;
+  font-size: 2.4vw;
   color: var(--primary-dark);
   text-align: center;
 }
