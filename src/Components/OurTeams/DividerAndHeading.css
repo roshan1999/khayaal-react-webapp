@@ -6,10 +6,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top:0.4vw;
+  margin-bottom:1vw;
 }
 .page-divider {
-  width: 85%;
+  width: 77.5%;
   border-bottom: 1px solid rgba(46, 36, 75, 0.5);
+  margin-bottom: 3vw;
+  margin-top:1vw;
 }
 .section-heading h2 {
   font-size: 2.4vw;

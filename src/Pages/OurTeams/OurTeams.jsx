@@ -86,20 +86,20 @@ const OurTeams = () => {
             <ParentLeader1 name="Sharmishtha Singh" position="Founder of Khayaal" desec={founder} bold={founderbold} imageurl={Founder}></ParentLeader1> 
             <ParentLeader2 name="Rohan Pariakar" position="Co-Founder of Khayaal" desec={Cofounder} bold={cofounderbold}imageurl={CO_F}></ParentLeader2>
             </div>
-            <br/><br/>
+            <br/>
             <FAB FAB_links={FAB_links}></FAB>
             <div id="ect"><TeamsSecComponent sectionHeading="Education Campaign" details={educationCamp}></TeamsSecComponent></div>
-            <br/><br/> 
+            <br/>
             <div id="pr"><TeamsSecComponent sectionHeading="Public Relations" details={publicRelations}></TeamsSecComponent></div>
-            <br/><br/>
+            <br/>
             <div id="stratergy"><TeamsSecComponent sectionHeading="Strategy Team" details={stratergyTeam}></TeamsSecComponent></div>
-            <br/><br/>
+            <br/>
             <div id="cwt"><TeamsSecComponent sectionHeading="Content Writing Team" details={contentWriting}></TeamsSecComponent></div>
-            <br/><br/>
+            <br/>
             <div id="dt"><TeamsSecComponent sectionHeading="Design Team" details={designTeam}></TeamsSecComponent></div>
-            <br/><br/>
+            <br/>
             <div id="cc"><TeamsSecComponent sectionHeading="Content Creators" details={contentCreaters}></TeamsSecComponent></div>
-            <br/><br/>
+            <br/>
             <div id="hr"><TeamsSecComponent sectionHeading="Human Resources" details={hr}></TeamsSecComponent></div>
              
         </div>

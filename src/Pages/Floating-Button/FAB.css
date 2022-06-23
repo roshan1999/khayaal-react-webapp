@@ -4,7 +4,7 @@
 
 .fab-container {
 	position: fixed;
-	bottom: 50px;
+	bottom: 150px;
 	right: 50px;
 	z-index: 999;
 	cursor: pointer;
@@ -23,8 +23,8 @@
 }
 
 .fab > img {
-	width: 60px;
-	height: 60px;
+	width: 70px;
+	height: 70px;
 
 }
 

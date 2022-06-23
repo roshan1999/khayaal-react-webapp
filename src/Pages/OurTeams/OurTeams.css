@@ -2,8 +2,8 @@
     display: flex;
     flex-flow: column wrap;
     gap:1vw;
-    
     margin: 9vw 4vw;
+    background-color:#fff ;
   }
   
   @media screen and (max-width:719px){
