@@ -73,11 +73,15 @@ const OurTeams = () => {
 
 
     const FAB_links=[
-        {ref:"/members", title:"Top"},
+        {ref:"#", title:"Top"},
         {ref:"#leaders", title:"Leaders"},
-        {ref:"#design", title:"Design Team"},
-        {ref:"#content", title:"Content Team"},
-        {ref:"#finance", title:"Finance Team"},
+        {ref:"#ect", title:"Education Campaign"},
+        {ref:"#pr", title:"Public Relations"},
+        {ref:"#stratergy", title:"Strategy Team"},
+        {ref:"#cwt", title:"Content Writing Team"},
+        {ref:"#dt", title:"Design Team"},
+        {ref:"#cc", title:"Content Creators"},
+        {ref:"#hr", title:"Human Resources"},
     ]
     return (
         <div className="our-teams-container">
