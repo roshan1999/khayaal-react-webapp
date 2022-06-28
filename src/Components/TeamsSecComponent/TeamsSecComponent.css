@@ -14,12 +14,18 @@
 
    @media screen and (max-width: 624px) {
       .cards {
-         
-          
+                 
           justify-content: space-evenly;
           
           
-      }}
+      }
+      .secc {
+        margin-top: 1vw;
+        margin-bottom: 2vw;
+      }
+      
+    }
+
   
       
 /*   

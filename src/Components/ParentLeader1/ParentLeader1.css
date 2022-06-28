@@ -6,6 +6,8 @@
     gap: 10%;
     align-items: center;
     margin-bottom: 7vw;
+
+
 }
 
 .lpcdes{
@@ -26,4 +28,16 @@
     max-height: 100%; */
     border: 8px solid var(--primary-dark);
     
+}
+@media  screen and (max-width:600px) {
+
+.leadimage{
+    width: 30vw;
+    height: 25vw;
+    
+}
+.lpc {
+    margin-top: 2vw;
+    margin-bottom: 10vw;
+}
 }

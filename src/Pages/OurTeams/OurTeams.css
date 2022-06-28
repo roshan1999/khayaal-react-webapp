@@ -52,6 +52,11 @@
 
 
   }
+  @media screen and (min-width:601px) and (max-width:900px) {
+    .our-teams-container {
+      padding-top:8vw;
+    }
+  }
 
   @media screen and (max-width:600px){
     .our-teams-container {
@@ -61,7 +66,15 @@
       width: 279.67px;
       height:235.97px;
     }
-  
-  
+    .leader-contents{
+      align-self: center;
+      text-align: center;
+      width: 80%;
+      margin: unset;
+      font-style: italic;
+        font-size: .5vw;
+        color:var(--info-text-color);
+        text-align: center;
+    }
 
   }
