@@ -5,7 +5,14 @@
     margin: 9vw 4vw;
     background-color:#fff ;
   }
-  
+  :target {
+    padding-top: 8vw;
+  }
+/* 
+  :link :visited :active {
+    padding-top:0;
+    scroll-padding-top:0;
+  } */
   @media screen and (max-width:719px){
 
     .lpc-2{
@@ -46,19 +53,15 @@
 
   }
 
-  @media screen and (min-width:720px) and (max-width:940px){
-
+  @media screen and (max-width:600px){
+    .our-teams-container {
+      padding-top: 10vw;
+    }
     .leadimage,.leadimage-2{
       width: 279.67px;
       height:235.97px;
     }
-  }
   
-  :target {
-    padding-top: 8vw;
-  }
+  
 
-  :link :visited :active {
-    padding-top:0;
-    scroll-padding-top:0;
   }
