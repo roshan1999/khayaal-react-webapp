@@ -34,6 +34,11 @@
     justify-content: center;
     align-items: center;
   }
+
+  .leftHeadingMobile{
+    visibility: hidden;
+  }
+
   .leftHeadingComp{
     font-family: 'Roboto';
     font-style: normal;
@@ -107,7 +112,9 @@
           height: 100%;
           margin: 0;
       }
-      .leftHeadingComp{
+
+      .leftHeadingMobile{
+        visibility: visible;
         font-family: 'Roboto';
         font-weight: 700;
         font-size: 23px;
@@ -119,8 +126,13 @@
         color: #262540;
       }
 
+      .leftHeadingComp{
+        visibility: hidden;
+      }
+
       .QuoteComp{
         font-size: 14px;
+        margin-top: -5rem;
       }
 
       .leftContentComp{

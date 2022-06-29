@@ -7,6 +7,7 @@ const ActivityComponent = (props) => {
         <section className='page2Component'>
             <div className="componentContainer">
             <div className="leftComp">
+                    <h1 className='leftHeadingMobile'>Education Campaign</h1>
                     <div className="rightComp">
                         <img src={Picture3} alt="" />
                     </div>
