@@ -17,8 +17,16 @@ const ActivityComponent = (props) => {
                         <p className='leftContentComp'>We strongly believe that education opens the doors for innumerable opportunities, but sadly not all children out there get it. To be their mentor and guide was an amazing opportunity for us because - “Jab padhega India tabhi toh badhega India.” We at Khayaal are teaching more than 75 students currently, starting from basic subjects like English and Math to important lessons such as morals and ethical values! <br/><br/><b>Team-Khayaal is putting all the effort to make their future brighter and better.</b></p>
                     </div>
             </div>
-            <div className='activities-divider'></div>
-        
+
+            <table><tr>
+            <td className='divider-row1' >&nbsp;</td>
+            <td className='divider-row2' rowspan="8">Other Activities</td>
+            <td className='divider-row3' >&nbsp;</td>
+            </tr><tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            </tr></table>
+            
         </div>
         </section>
 
