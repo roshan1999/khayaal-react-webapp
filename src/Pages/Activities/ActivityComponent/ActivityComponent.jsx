@@ -26,6 +26,12 @@ const ActivityComponent = (props) => {
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             </tr></table>
+
+            <div className="activity-divider"></div>
+
+            <div className="sectionContent">
+                <h1 className='sectionHeading'>Other Activities</h1>
+            </div> 
             
         </div>
         </section>

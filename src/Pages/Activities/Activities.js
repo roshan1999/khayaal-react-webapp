@@ -9,7 +9,6 @@ import bg from "../../assets/Activity-Page-Bg1.png";
 import bg2 from "../../assets/Activity-Page-Bg2.png";
  import womenAtKhayaal from '../../assets/activity/women-at-khayaal.png';
 import ActivityComponent from './ActivityComponent/ActivityComponent';
-// import ActivityHeading from './ActivityHeading/ActivityHeading';
 import ActivitySections from './Activity-sections/ActivitySections';
 
 const Activities = () => {
@@ -17,15 +16,8 @@ const Activities = () => {
     return (
         <div className="activities-page">
         <ActivityComponent />
-        {/* <ActivityHeading /> */}
         <ActivitySections />
-        {/* <AboutActivities
-            headingcolor="var(--primary-dark)" 
-            contentcolor="var(--info-text-color)" 
-            pic={pic1} heading = "Education Campaign" 
-            description = '"A pen, book & mentor can change the world."'
-            seconddescription = "We strongly believe that education opens the doors for innumerable opportunities, but sadly not all children out there get it. To be their mentor and guide was an amazing opportunity for us because - “Jab padhega India tabhi toh badhega India.” We at Khayaal are teaching more than 75 students currently, starting from basic subjects like English and Math to important lessons such as morals and ethical values! Team-Khayaal is putting all the effort to make their future brighter and better"
-        /> */}
+       
         <div id="covid"><AboutActivities
             bg= {bg} 
             headingcolor="white" 

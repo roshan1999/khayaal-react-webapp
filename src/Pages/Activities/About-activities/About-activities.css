@@ -79,13 +79,19 @@ section {
 }
 
 @media (max-width: 868px) {
+  section{
+    margin-top: 0;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+  }
   .container {
     flex-direction: column;
     width: 100%;
     margin: 0 40px;
   }
   .left {
-    margin-top: 120px;
+    margin-top: 0px;
     margin-bottom: 0px;
     margin-right: 0;
     width: auto;
@@ -109,16 +115,18 @@ section {
   } 
 
   .right > .content > span {
-    font-size: 13px;
-    margin: 0;
+    font-size: 14px;
+    /* margin-bottom: 10px; */
   }
   .right > .content > p {
-    font-size: 13px;
+    font-size: 9px;
+    line-height: 19px;
+    text-align: center;
     margin: 0;
   }
   .right > .content > h1 {
-    font-size: 25px;
-    margin-top: 60px;
+    font-size: 23px;
+    margin-top: 0;
     margin-bottom: 0;
     text-align: center;
   }
