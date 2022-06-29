@@ -2,7 +2,7 @@
     display: flex;
     /* height: 100vh; */
     width: 100%;
-    flex-direction: row;
+    flex-direction: column;
     margin-top: 60px;
     margin-bottom: 70px;
     justify-content: center;
@@ -20,9 +20,10 @@
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    width: 43vw;
+    width: 50vw;
     background: no-repeat center / cover;
     border: 8px solid #E5E5E5;
+    margin-top: 120px;
   }
   .leftComp{
     /* margin-left: 250px;
@@ -37,35 +38,57 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 38px;
     line-height: 38px;
     /* or 127% */
-    display: flex;
-    align-items: center;
+    text-align: center;
     color: #262540;
   }
-  .leftContentComp{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 38px;
-    /* or 173% */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #876186;
-    flex-wrap: nowrap;
-    flex-shrink: 1;
+  .QuoteComp{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #686868;
   }
+  .leftContentComp{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    /* or 173% */
+    color: #686868;
+    text-align: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .activities-divider{
+    width: 85%;
+  border-bottom: 1px solid rgba(46, 36, 75, 0.5);
+  padding-top: 80px;
+  }
+
+  /* @media (max-width: 430px){
+
+    .rightComp img{
+      width: 90%;
+      height: 70%;
+    }
+
+    .leftHeadingComp{
+      font-size: 23px;
+    }
+} */
+
 
   @media only screen and (max-width: 768px){
     .componentContainer{
           flex-direction: column;
           align-items: center;
-
+          margin-top: 8rem;
       }
       .leftComp{
+
           align-items: center;
           width: 100%;
           margin: 0;
@@ -80,35 +103,37 @@
       }
       .rightComp img{
           align-items: center;
-          width: 70%;
-          height: 60%;
+          width: 100%;
+          height: 100%;
           margin: 0;
       }
       .leftHeadingComp{
         font-family: 'Roboto';
-        font-style: normal;
         font-weight: 700;
-        font-size: 34px;
+        font-size: 23px;
         line-height: 20px;
-        margin: 0;
+        margin-top: 20px ;
         /* or 127% */
         display: flex;
-        align-items: center;
         justify-content: center;
         color: #262540;
       }
+
+      .QuoteComp{
+        font-size: 14px;
+      }
+
       .leftContentComp{
         font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
-        font-size: 24px;
-        /* line-height: 20px; */
+        font-size: 9px;
+        line-height: 17px; 
   
         /* or 173% */
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        color: #876186;
+        text-align: justify;
+        color: #686868;
+        padding:0;
       }
   }
   
