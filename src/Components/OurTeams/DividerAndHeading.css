@@ -1,36 +1,60 @@
 .divhead {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  line-height: 2.4vw;
+  /* line-height: 2.4vw; */
+  font-size: 1.6vw;
+  color: var(--primary-dark);
+  text-align: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin-top:0.4vw;
   margin-bottom:1vw;
 }
-.page-divider {
+.divhead::before,
+.divhead::after {
+  content: '';
+  height: 1px;
+  background-color: rgba(46, 36, 75, 0.3);
+  flex-grow: 0.425;
+}
+
+.divhead::before {
+  margin-right: 1vw;
+  margin-left:3vw;
+}
+
+.divhead::after {
+  margin-left: 1vw;
+}
+/* .page-divider {
   width: 77.5%;
   border-bottom: 1px solid rgba(46, 36, 75, 0.3);
-  margin-bottom: 3vw;
+  margin-bottom: 0;
   margin-top:1vw;
 }
 .section-heading h2 {
   font-size: 2.4vw;
   color: var(--primary-dark);
   text-align: center;
-}
+} */
 @media screen and (max-width:900px) {
-  .section-heading h2{
-  font-size: 3vw;
+  .divhead h2{
+  font-size: 3.1vw;
     font-weight: 500;
   }
+  
 }
 @media screen and (max-width:600px){
 
-  .section-heading h2{
+  .divhead h2{
 
-    font-size: 6vw;
+    font-size: 7vw;
+  }
+  .divhead::before,.divhead::after {
+    content: '';
+  height: 0;
   }
 
 }
