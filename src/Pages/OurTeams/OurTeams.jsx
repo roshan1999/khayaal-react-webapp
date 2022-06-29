@@ -17,6 +17,7 @@ import ect2 from '../../assets/ourteams/educationcamp/ect2.png'
 import ect3 from '../../assets/ourteams/educationcamp/ect3.png'
 
 import hr1 from '../../assets/ourteams/hr/hr1.png'
+import hr2 from '../../assets/ourteams/hr/hr2.png'
 
 import pr1 from '../../assets/ourteams/publicrelations/pr1.png'
 import pr2 from '../../assets/ourteams/publicrelations/pr2.png'
@@ -68,7 +69,8 @@ const OurTeams = () => {
     ];
 
     const hr=[
-        {name:"Mohammed Rangwala", imageurl:hr1, position:"President", quote:lovwText}
+        {name:"Mohammed Rangwala", imageurl:hr1, position:"President", quote:lovwText},
+        {name:"Sukriti Misra", imageurl:hr2, position:"Team Leader", quote:lovwText}
     ];
 
 
