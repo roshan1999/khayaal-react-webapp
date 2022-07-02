@@ -1,0 +1,199 @@
+.simple-button {
+  padding: 0;
+  border: 0;
+  margin-left: 3rem;
+  background-color: var(--background-color);
+  color: var(--secondary-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.action-items .btn-filled {
+  font-size: 1rem;
+}
+
+#short-slogan {
+  font-family: Montagu Slab, serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--primary-dark);
+  margin-bottom: 3vw;
+  /* letter-spacing: 10px; */
+}
+
+.about-img {
+  flex: 1;
+  margin-top: 1vw;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--secondary-text-color);
+}
+
+@media (min-width: 674px) {
+  .landing-intro-container {
+    padding-top: 6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .landing-intro-left-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .landing-intro-left-container .slogan-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 10rem;
+    height: 100%;
+    width: 90%;
+  }
+
+  .landing-intro-left-container .action-items {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .landing-intro-right-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .landing-intro-right-container .right-img {
+    height: 45vw;
+  }
+
+  .landing-intro-right-container .slogan-desc {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .landing-intro-left-container .slogan-desc {
+    width: 65%;
+  }
+
+  #short-slogan {
+    font-size: 3.5vw;
+  }
+
+  .landing-intro-left-container .about-img {
+    font-size: 2vw;
+  }
+
+  .landing-intro-left-container .btn-filled {
+    font-size: 1.5vw;
+  }
+
+  .landing-intro-left-container .simple-button {
+    font-size: 1.5vw;
+  }
+
+  .landing-intro-right-container {
+    flex: 1.3;
+  }
+  .landing-intro-right-container .right-img {
+    height: 45vw;
+  }
+}
+
+@media (max-width: 673px) {
+  .landing-intro-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 80vh; */
+    /* text-align: center; */
+  }
+
+  .landing-intro-left-container {
+    padding-top: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  #short-slogan {
+    font-family: Montagu Slab;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5.5vw;
+    color: var(--primary-dark);
+  }
+
+  .landing-intro-left-container .slogan-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .landing-intro-left-container .slogan-desc .action-items,
+  .landing-intro-left-container .slogan-desc .about-img {
+    display: none;
+  }
+
+  .landing-intro-right-container {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .landing-intro-right-container .right-img {
+    width: 90vw;
+    height: 100vw;
+    padding: 5vw 0;
+  }
+
+  .landing-intro-right-container .slogan-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .landing-intro-right-container .action-items {
+    flex: 1;
+  }
+
+  .landing-intro-right-container .about-img {
+    flex: 1;
+  }
+}
+
+@media (max-width: 375px) {
+  .landing-intro-container {
+    padding-top: 1rem;
+  }
+
+  .action-items .btn-filled {
+    padding: 2vw 4vw;
+    font-size: 5vw;
+  }
+
+  .landing-intro-right-container button {
+    font-size: 6vw;
+  }
+}

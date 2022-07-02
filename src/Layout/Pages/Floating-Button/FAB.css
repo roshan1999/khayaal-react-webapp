@@ -1,0 +1,71 @@
+.fab-container {
+	position: fixed;
+	bottom: 120px;
+	right: 30px;
+	z-index: 999;
+	cursor: pointer;
+}
+
+.fab-icon-holder:hover{
+	opacity: 0.8;
+}
+
+.fab-icon-holder i {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	height: 100%;
+}
+
+.fab > img {
+	width: 70px;
+	height: 70px;
+
+}
+
+.fab-options {
+	list-style-type: none;
+	margin: 0;
+
+	position: absolute;
+	bottom: 70px;
+	right: 0;
+
+	opacity: 0;
+
+	transition: all 0.3s ease;
+	transform: scale(0);
+	transform-origin: 85% bottom;
+}
+
+.fab:hover + .fab-options, .fab-options:hover {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.fab-options li {
+	display: flex;
+	justify-content: flex-end;
+	padding: 5px;
+}
+.fab-options li a {
+	text-decoration: none;
+	color: var(--primary-dark);
+}
+.fab-options li a:hover {
+	text-decoration: underline;
+	color: var(--secondary-text-color);
+}
+
+.fab-options-label {
+	padding: 7px 5px;
+	align-self: center;
+	user-select: none;
+	white-space: nowrap;
+	font-size: 16px;
+	font-family: Roboto;
+	color: var(--primary-dark);
+	margin-right: 10px;
+	text-decoration: none;
+}

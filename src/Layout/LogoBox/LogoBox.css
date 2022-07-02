@@ -1,0 +1,24 @@
+.logoBox {
+  position: fixed;
+  width: 13rem;
+  height: 13rem;
+  top: 0.5vw;
+  left: 2vw;
+  z-index: 999;
+}
+
+@media (max-width: 674px) {
+  .logoBox {
+    top: 5.5vw;
+    left: 5vw;
+  }
+  .logoBox img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 510px) {
+  .logoBox img {
+    width: 40%;
+  }
+}

@@ -12,10 +12,13 @@
   /* Variation 2 */
   --primary-light: #f8f8f5;
   --primary-dark: #2e244b;
-  --background-color: #faf7f5;
+  --background-color: #ffffff;
   --primary-text-color: #2e244b;
   --secondary-text-color: #885F88;
   --tertiary-text-color: #f3f4ed;
-  --info-text-color: #686868;
+  --info-text-color: #6a6a6a;
   --light-text-color: #b8c5b0;
+  --primary-border-color: #2e244b;
+  --secondary-border-color: #885F87;
+  --primary-dim-color: rgba(0,0,0,0.25);
 }

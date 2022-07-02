@@ -1,0 +1,20 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .home-container .landing-intro-container {
+  scroll-snap-align: start;
+}
+
+.home-container .landing-about-container {
+  scroll-snap-align: start;
+}
+
+.home-container .landing-last-container {
+  scroll-snap-align: start;
+}
+
+.home-container .team-parent-container {
+  scroll-snap-align: start;
+} */
