@@ -1,6 +1,92 @@
 .sidebar-parent-container {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    background-color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  width: 100%;
+  font-size: 32px;
+  z-index: 3;
+  right: 0;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.sidebar {
+  background-color: rgba(255, 255, 255, 1);
+  position: absolute;
+  width: 425px;
+  z-index: 4;
+  right: 0;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sidebar img {
+    margin: 5rem 0 0 0;
+}
+
+.sidebar-links {
+  display: flex;
+  width: 100%;
+  margin: 2rem 0;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.sidebar-links ul {
+  padding-left: 80px;
+  width: 60%;
+  flex-direction: column;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+hr {
+  border: 0.5px solid var(--secondary-text-color);
+  opacity: 0.38;
+  width: 100%;
+}
+
+.sidebar-links li button {
+  font-family: "Roboto";
+  font-size: 18px;
+  letter-spacing: 0;
+  color: var(--primary-text-color);
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+  background-color: transparent;
+  border: 0;
+}
+
+.sidebar-links li button:hover {
+  color: var(--secondary-text-color);
+  cursor: pointer;
+}
+
+@media (max-width: 425px) {
+    .sidebar {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .sidebar img {
+        width: 40vw;
+    }
+
+    .sidebar-links {
+        width: 100vw;
+    }
+
+    .sidebar-links ul {
+        padding-left: 20vw;
+        width: 60vw;
+    }
+
+    .sidebar-links li button {
+        font-size: 4.5vw;
+    }
 }

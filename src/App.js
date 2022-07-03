@@ -10,19 +10,26 @@ import About from './Layout/Pages/AboutUs/AboutUs';
 import Activities from './Layout/Pages/Activities/Activities';
 import OurTeams from './Layout/Pages/OurTeams/OurTeams';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Sidebar from './Layout/Navbar/Sidebar';
 
 
 export default function App() {
+  const [isActive, setIsActive] = React.useState(false);
+  const toggleActive = (e) => {
+    console.log("clicked");
+    setIsActive(!isActive);
+  }
   return (
     <div className='app-container'>
       <Router>
         <LogoBox></LogoBox>
-        <Navbar></Navbar>
+        <Navbar activateFunc={toggleActive} active={isActive}></Navbar>
+        {isActive && <Sidebar activateFunc = {toggleActive}/>}
         <Routes>
-          <Route path="/" element = {<Home />}/>
-          <Route path="/about" element = {<About />}/>
-          <Route path="/activities" element = {<Activities />} />
-          <Route path="/members" element = {<OurTeams />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/activities" element={<Activities />} />
+          <Route path="/members" element={<OurTeams />} />
         </Routes>
         <Footer />
       </Router>

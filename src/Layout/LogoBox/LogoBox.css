@@ -4,7 +4,7 @@
   height: 13rem;
   top: 0.5vw;
   left: 2vw;
-  z-index: 999;
+  z-index: 2;
 }
 
 @media (max-width: 674px) {
