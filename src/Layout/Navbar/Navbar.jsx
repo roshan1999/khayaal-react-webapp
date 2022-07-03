@@ -11,8 +11,12 @@ export default function Navbar(props) {
                 {/* <li><button onClick={() => navigate("/about")}>About Us</button></li> */}
                 {/* <li><button onClick={() => navigate("/parent")}>Parent Organisation</button></li> */}
                 <li><button onClick={() => navigate("/activities")}>Activities</button></li>
-                <li><button onClick={() => navigate("/members"  )}>Members</button></li>
-                <li><button onClick={() => navigate("/join")}>Join Us</button></li>
+                <li><button onClick={() => navigate("/members")}>Members</button></li>
+                <li>
+                    <a href="http://linktr.ee/teamkhayaal">
+                        <button onClick={() => navigate("/join")}>Join Us</button>
+                    </a>
+                </li>
             </ul >
             <div className='action-items'>
                 <button className="btn-filled">Donate Now</button>

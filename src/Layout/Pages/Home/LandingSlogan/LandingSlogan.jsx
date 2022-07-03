@@ -11,7 +11,8 @@ export default function LandingSlogan() {
                     {/* <span className="about-img">About the picture</span> */}
                     <div className="action-items">
                         <FilledButton>Donate Now</FilledButton>
-                        <button className='simple-button'>Join us</button>
+                        <button onClick={(e) => { e.preventDefault(); window.location.href = 'http://linktr.ee/teamkhayaal' }}
+                            className='simple-button'>Join us</button>
                     </div>
                 </div>
             </div>
@@ -20,7 +21,10 @@ export default function LandingSlogan() {
                 <div className="slogan-desc">
                     <div className="action-items">
                         <FilledButton>Donate Now</FilledButton>
-                        <button className='simple-button'>Join us</button>
+                        <button className='simple-button'
+                            onClick={(e) => { e.preventDefault(); window.location.href = 'http://linktr.ee/teamkhayaal' }}>
+                            Join us
+                        </button>
                     </div>
                 </div>
             </div>

@@ -4,23 +4,25 @@ import FbLogo from '../../assets/FooterLogo/fb.png';
 import IgLogo from '../../assets/FooterLogo/ig.png';
 import LinkedInLogo from '../../assets/FooterLogo/linkedin.png';
 import TwitterLogo from '../../assets/FooterLogo/twitter.png';
-import UpLogo from '../../assets/FooterLogo/up.png';
 
 function Footer() {
 
-    const imgList = [FbLogo, IgLogo, LinkedInLogo, TwitterLogo, UpLogo];
+    const imgList = [{ img: FbLogo, link: "" }, { img: IgLogo, link: "https://www.instagram.com/teamkhayaal/" }, { img: LinkedInLogo, link: "https://www.linkedin.com/company/khayaaldeliveringhope/" }, { img: TwitterLogo, link: "https://twitter.com/teamkhayaal" }];
     return (
         <div className="footer-main-container">
             <div className="footer-container">
                 <div className="footer-contact-container">
                     <span>Contact Us</span>
                     <span>9876543210</span>
-                    <span>email@gmail.com</span>
+                    <span>team@khayaal.org</span>
                 </div>
                 <div className="footer-logo-container">
-                    {imgList.map((logo, index) => {
-                        return <img key={index} src={logo} alt="Logo" />
-                    })}
+                    {imgList.map((imgInfo, index) => {
+                        return(
+                        <a key = {index} href={imgInfo.link}>
+                            <img key={index} src={imgInfo.img} alt="Logo" />
+                        </a>
+                    )})}
                 </div>
                 <div className="footer-newsletter-container">
                     <p>Subscribe to our Newsletter </p>

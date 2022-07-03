@@ -9,7 +9,7 @@ export default function (props) {
         <>
             <div className="backdrop" onClick={props.activateFunc}>
             </div>
-            <div className= "sidebar-parent-container">
+            <div className="sidebar-parent-container">
                 <div className="sidebar">
                     <img src={KhayaalLogo} alt="khayaal_logo.png" width="150px" />
                     <div className="sidebar-links">
@@ -24,7 +24,12 @@ export default function (props) {
                             <hr />
                             <li><button onClick={() => { props.activateFunc(); navigate("/members") }}>Members</button></li>
                             <hr />
-                            <li><button onClick={() => { props.activateFunc(); navigate("/join") }}>Join Us</button></li>
+                            <li>
+                                <a href="http://linktr.ee/teamkhayaal">
+                                    <button onClick={() => { props.activateFunc(); }}>Join Us
+                                    </button>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>

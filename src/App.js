@@ -9,7 +9,7 @@ import Home from './Layout/Pages/Home/Home';
 import About from './Layout/Pages/AboutUs/AboutUs';
 import Activities from './Layout/Pages/Activities/Activities';
 import OurTeams from './Layout/Pages/OurTeams/OurTeams';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Sidebar from './Layout/Navbar/Sidebar';
 
 
@@ -30,6 +30,7 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/activities" element={<Activities />} />
           <Route path="/members" element={<OurTeams />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
       </Router>

@@ -9,7 +9,7 @@ const LandingLast = () => {
             </div>
             <div className="right-container">
                 <div className="action-items">
-                    <button>Join Us</button>
+                    <button onClick={(e) => { e.preventDefault(); window.location.href = 'http://linktr.ee/teamkhayaal' }}>Join Us</button>
                     <button id="last-donate">Donate Now</button>
                 </div>
             </div>
