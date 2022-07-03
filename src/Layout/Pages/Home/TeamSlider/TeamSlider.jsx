@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { motion } from "framer-motion";
 import './TeamSlider.css';
 import { useSwipeable } from "react-swipeable";
@@ -28,7 +28,6 @@ const TeamSlider = (props) => {
 
     const isMobileScreen = useMediaQuery({ query: '(max-width: 768px)' })
     const [position, positionSet] = React.useState(0);
-    const [flag, setFlag] = React.useState(false);
     const swipeHandlers = useSwipeable({
         onSwipedLeft: () => handleSwipe('Left'),
         onSwipedRight: () => handleSwipe('Right')

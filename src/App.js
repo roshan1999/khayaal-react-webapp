@@ -16,15 +16,15 @@ import Sidebar from './Layout/Navbar/Sidebar';
 export default function App() {
   const [isActive, setIsActive] = React.useState(false);
   const toggleActive = (e) => {
-    console.log("clicked");
     setIsActive(!isActive);
   }
+
   return (
     <div className='app-container'>
       <Router>
         <LogoBox></LogoBox>
         <Navbar activateFunc={toggleActive} active={isActive}></Navbar>
-        {isActive && <Sidebar activateFunc = {toggleActive}/>}
+        {isActive && <Sidebar active={isActive} activateFunc={toggleActive} />}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

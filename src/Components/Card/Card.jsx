@@ -1,25 +1,25 @@
-import React  from 'react'
+import React from 'react'
 import './Card.css'
 
 export default function Card(props) {
-  const name=props.name;
-  const imageurl=props.imageurl;
-  const position=props.position;
+  const name = props.name;
+  const imageurl = props.imageurl;
+  const position = props.position;
   const quote = props.quote;
-  const knowmore=props.knowmore;
-      return (
-        <center className="flexitemot">
+  const knowmore = props.knowmore;
+  return (
+    <center className="flexitemot">
       <div className="flipCard">
         <div className="flipCard-inner">
           <div className="flipCard-front">
             <img className="memimg" src={imageurl} alt="Jane"></img>
             <div className="card-parent-container">
-            <center><div className="divider">
+              <center><div className="divider">
                 <span></span>
               </div></center>
               <div>
-              <div className="cardName"><h2>{name}</h2></div>
-              <div className="cardTitle">{position}</div>
+                <div className="cardName"><h2>{name}</h2></div>
+                <div className="cardTitle">{position}</div>
               </div>
             </div>
           </div>
@@ -35,7 +35,7 @@ export default function Card(props) {
             <center><button className="knowMoreBtn">Know More</button></center>
           </div>
         </div>
-    </div>
+      </div>
     </center>
     // <div class="card">
 
@@ -56,7 +56,6 @@ export default function Card(props) {
     //                         </div>
 
     //                 </div>
-      
-    );
-  }
- 
+
+  );
+}

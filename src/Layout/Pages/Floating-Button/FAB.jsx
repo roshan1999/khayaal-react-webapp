@@ -10,8 +10,8 @@ const FAB = (props) => {
                 <img src={FAB_icon} />
             </div>
             <ul className="fab-options">
-                {FAB_links.map((link)=>{
-                    return <li><a href={link.ref}>{link.title}</a></li>
+                {FAB_links.map((link, index)=>{
+                    return <li key = {index}><a key = {index} href={link.ref}>{link.title}</a></li>
                 })}
             </ul>
         </div>

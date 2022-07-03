@@ -8,8 +8,8 @@ export default function Navbar(props) {
         <div className='nav'>
             <ul>
                 <li><button onClick={() => navigate("/")}>Home</button></li>
-                <li><button onClick={() => navigate("/about")}>About Us</button></li>
-                <li><button onClick={() => navigate("/parent")}>Parent Organisation</button></li>
+                {/* <li><button onClick={() => navigate("/about")}>About Us</button></li> */}
+                {/* <li><button onClick={() => navigate("/parent")}>Parent Organisation</button></li> */}
                 <li><button onClick={() => navigate("/activities")}>Activities</button></li>
                 <li><button onClick={() => navigate("/members"  )}>Members</button></li>
                 <li><button onClick={() => navigate("/join")}>Join Us</button></li>

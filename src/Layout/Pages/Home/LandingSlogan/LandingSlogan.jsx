@@ -7,7 +7,7 @@ export default function LandingSlogan() {
         <div className="landing-intro-container">
             <div className="landing-intro-left-container">
                 <div className="slogan-desc">
-                    <span id="short-slogan">"Education is the movement from Darkness to Light"</span>
+                    <span id="short-slogan">&ldquo;Education is the movement from Darkness to Light&rdquo;</span>
                     {/* <span className="about-img">About the picture</span> */}
                     <div className="action-items">
                         <FilledButton>Donate Now</FilledButton>

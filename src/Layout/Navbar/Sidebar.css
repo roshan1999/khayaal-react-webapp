@@ -1,13 +1,23 @@
-.sidebar-parent-container {
+.backdrop {
   background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
+  position: fixed;
   width: 100%;
   font-size: 32px;
   z-index: 3;
+  left: 0;
+  height: 100%;
+  display: flex;
+}
+
+.sidebar-parent-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 425px;
+  font-size: 32px;
+  z-index: 4;
   right: 0;
   height: 100%;
   display: flex;
-  overflow: hidden;
 }
 
 .sidebar {
