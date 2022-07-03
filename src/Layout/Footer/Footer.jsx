@@ -7,7 +7,7 @@ import TwitterLogo from '../../assets/FooterLogo/twitter.png';
 
 function Footer() {
 
-    const imgList = [{ img: FbLogo, link: "" }, { img: IgLogo, link: "https://www.instagram.com/teamkhayaal/" }, { img: LinkedInLogo, link: "https://www.linkedin.com/company/khayaaldeliveringhope/" }, { img: TwitterLogo, link: "https://twitter.com/teamkhayaal" }];
+    const imgList = [{ img: FbLogo, link: "https://facebook.com/teamkhayaal" }, { img: IgLogo, link: "https://www.instagram.com/teamkhayaal/" }, { img: LinkedInLogo, link: "https://www.linkedin.com/company/khayaaldeliveringhope/" }, { img: TwitterLogo, link: "https://twitter.com/teamkhayaal" }];
     return (
         <div className="footer-main-container">
             <div className="footer-container">

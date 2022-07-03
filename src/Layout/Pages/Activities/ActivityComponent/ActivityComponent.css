@@ -58,13 +58,13 @@
   }
   .leftContentComp{
     font-weight: 400;
-    font-size: 15px;
+    font-size: 15vw;
     line-height: 25px;
     /* or 173% */
     color: #686868;
     text-align: center;
-    padding-left: 14rem;
-    padding-right: 14rem;
+    padding-left: 14vw;
+    padding-right: 14vw;
   }
 
   table{
