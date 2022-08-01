@@ -1,9 +1,12 @@
 .activity-seperator {
   display: flex;
-  margin: 7% auto;
+  margin: auto auto;
   justify-content: center;
   align-items: center;
   width: 75%;
+  height: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .activity-seperator::before,
@@ -21,4 +24,10 @@
   font-size: 30px;
   line-height: 127%;
   color: var(--primary-text-color);
+}
+
+@media (max-width: 673px) {
+  .activity-seperator span {
+    font-size: 24px;
+  }
 }

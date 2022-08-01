@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 
-const ActivityButton = (props) => {
+const ActivityButton = () => {
     return(
         <div className="main-activity-buttons-container">
             <button>Covid Taskforce</button>

@@ -3,6 +3,7 @@ import './style.css';
 import EducationCampaign from './EducationCampaign';
 import ActivitySeperator from './ActivitySeperator';
 import ActivityButton from './ActivityButton';
+import BannerBg from './BannerBg';
 
 const Campaign = () => {
     return (
@@ -10,6 +11,7 @@ const Campaign = () => {
             <EducationCampaign />
             <ActivitySeperator />
             <ActivityButton />
+            <BannerBg />
         </div>
     );
 }

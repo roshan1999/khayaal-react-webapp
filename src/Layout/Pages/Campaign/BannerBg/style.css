@@ -1,0 +1,108 @@
+.banner-bg-parent-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow-x: clip;
+}
+
+.banner-bg-parent-container img {
+  width: 130%;
+  position: relative;
+  /* // transform: "rotateY(180deg)" */
+}
+
+.heading-image-container {
+  position: absolute;
+  right: 55vw;
+  width: 35vw;
+}
+
+.heading-image-container img {
+  width: 100%;
+  border: 8px solid var(--tertiary-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.activities-description {
+  width: 30vw;
+  right: 10vw;
+  font-family: "Roboto";
+  font-style: normal;
+  position: absolute;
+  text-align: left;
+  color: var(--background-color);
+}
+
+.activities-description .heading {
+  font-weight: 700;
+  font-size: 3vw;
+  line-height: 84%;
+  font-family: "Roboto";
+  font-style: normal;
+  margin-bottom: 20px;
+}
+
+.activities-description .subheading {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 1.7vw;
+  line-height: 125%;
+}
+
+.activities-description .paragraph {
+  font-size: 1vw;
+  line-height: 2.2vw;
+}
+
+@media (max-width: 673px) {
+  .banner-bg-parent-container {
+    margin: 140px 0 140px 0;
+    width: 99vw;
+    height: 50vw;
+  }
+
+  .banner-bg-parent-container > img {
+    width: 1500px;
+    object-fit: contain;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+  }
+
+  .heading-image-container {
+    right: 0;
+    left: 0;
+    margin: auto auto;
+    padding-bottom: 250px;
+    padding-right: 3.5vw;
+    width: 60%;
+  }
+
+  .activities-description {
+    right: 0;
+    left: 0;
+    text-align: center;
+    margin: auto auto;
+    padding-top: 45vw;
+    width: 60%;
+    color: var(--background-color);
+  }
+
+  .activities-description .heading {
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .activities-description .subheading {
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+
+  .activities-description .paragraph {
+    font-weight: 300;
+    font-size: 10px;
+    margin-bottom: 15px;
+    line-height: 130%;
+  }
+}

@@ -1,7 +1,11 @@
 .main-activity-page {
   margin-top: 140px;
-  width: 100vw;
-  max-width: 100%;
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
+}
+
+@media (max-width: 673px) {
+  .main-activity-page {
+    margin-top: 100px;
+  }
 }

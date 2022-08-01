@@ -149,8 +149,8 @@ span:last-child {
   }
 
   .footer-contact-container p:first-child,
-  p:nth-child(2),
-  p:last-child {
+  .footer-contact-container p:nth-child(2),
+  .footer-contact-container p:last-child {
     font-size: 0.9rem;
   }
 
