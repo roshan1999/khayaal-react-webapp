@@ -7,7 +7,7 @@ import LogoBox from './Layout/LogoBox/LogoBox'
 import Footer from './Layout/Footer/Footer';
 import Home from './Layout/Pages/Home/Home';
 import About from './Layout/Pages/AboutUs/AboutUs';
-import Activities from './Layout/Pages/Activities/Activities';
+import Campaign from './Layout/Pages/Campaign';
 import OurTeams from './Layout/Pages/OurTeams/OurTeams';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Sidebar from './Layout/Navbar/Sidebar';
@@ -28,7 +28,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/activities" element={<Activities />} />
+          <Route path="/activities" element={<Campaign />} />
           <Route path="/members" element={<OurTeams />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>

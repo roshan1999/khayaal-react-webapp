@@ -12,7 +12,9 @@ import sanika from './assets/Members/sanika.png';
 import khayaalOne from './assets/Homepage/AboutKhayaal/khayaal-about-1.png';
 import khayaalTwo from './assets/Homepage/AboutKhayaal/khayaal-about-2.png';
 import khayaalThree from './assets/Homepage/AboutKhayaal/khayaal-about-3.png';
+import EducationBanner from './assets/Campaign/EducationBanner/EducationBanner.jpg';
 
+// Homepage images
 const memberImages = [
     uday, sharmishtha, rohan,
     pallak,viraj,janvi,
@@ -21,4 +23,8 @@ const memberImages = [
 ];
 const getLandingAboutImages = [khayaalOne, khayaalTwo, khayaalThree];
 
-export { memberImages, getLandingAboutImages };
+// Campaign page images
+const campaignBannerImages = [EducationBanner];
+
+
+export { memberImages, getLandingAboutImages, campaignBannerImages };

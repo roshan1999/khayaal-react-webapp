@@ -96,7 +96,6 @@
   position: relative;
   background-color: var(--primary-dark);
   border-radius: 8px;
-  z-index: 1;
   transform-origin: 0 0;
   transition: 0.4s;
 }

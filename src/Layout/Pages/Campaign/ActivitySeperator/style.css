@@ -1,0 +1,24 @@
+.activity-seperator {
+  display: flex;
+  margin: 7% auto;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+}
+
+.activity-seperator::before,
+.activity-seperator::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid black;
+  margin: 0 0.5em;
+}
+
+.activity-seperator span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 127%;
+  color: var(--primary-text-color);
+}
