@@ -1,13 +1,13 @@
 import React from 'react';
 import './style.css';
 
-const ActivityButton = () => {
+const ActivityButton = (props) => {
     return(
         <div className="main-activity-buttons-container">
-            <button>Covid Taskforce</button>
-            <button>Donation Drive</button>
-            <button>Women of Khayaal</button>
-            <button>Feed the paws</button>
+            <button onClick = {() => props.click(props.reference[0])}>Covid Taskforce</button>
+            <button onClick = {() => props.click(props.reference[1])}>Donation Drive</button>
+            <button onClick = {() => props.click(props.reference[2])}>Women of Khayaal</button>
+            <button onClick = {() => props.click(props.reference[3])}>Feed the paws</button>
         </div>
     );
 }

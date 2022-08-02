@@ -8,7 +8,7 @@ const BannerBg = (props) => {
     const isMobileScreen = useMediaQuery({ query: '(max-width: 673px)' })
 
     return (
-        <div className="banner-bg-parent-container">
+        <div ref = {props.reference} className="banner-bg-parent-container">
             {props.activatedBg === "true" ?
                 <img src={bgImg} alt="khayaal-background"
                     style={props.rotateBg === "true" && !isMobileScreen ?
