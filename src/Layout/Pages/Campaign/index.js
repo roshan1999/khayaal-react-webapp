@@ -6,6 +6,7 @@ import ActivityButton from './ActivityButton';
 import BannerBg from './BannerBg';
 import { getActivities } from '../../../constants/ActivitiesConstants.js';
 import { useRef } from 'react';
+import CampaignFab from './CampaignFab';
 
 const Campaign = () => {
     const activities = getActivities();
@@ -23,14 +24,15 @@ const Campaign = () => {
             <EducationCampaign />
             <ActivitySeperator />
             <ActivityButton click={scrollToDiv} reference={[firstRef, secondRef, thirdRef, fourthRef]} />
-            <BannerBg activatedBg="true" rotateBg="true" activity={activities[0]} reference={firstRef} /> :
+            <BannerBg activatedBg="true" activity={activities[0]} reference={firstRef} /> :
             <div className="divider-line"></div>
             <BannerBg activatedBg="false" activity={activities[1]} reference={secondRef} />
-            <div className="divider-line"></div>
+            <div className="divider-line" style = {{paddingBottom: "50px"}}></div>
             <BannerBg activatedBg="true" rotateBg="true" activity={activities[2]} reference={thirdRef} />
-            <div className="divider-line"></div>
+            <div className="divider-line" style = {{marginBottom: "15px"}}></div>
             <BannerBg activatedBg="false" activity={activities[3]} reference={fourthRef} />
             <div className="divider-line"></div>
+            <CampaignFab />
         </div>
     );
 }

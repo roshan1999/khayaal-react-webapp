@@ -71,7 +71,7 @@
     right: 0;
     left: 0;
     margin: auto auto;
-    padding-bottom: 300px;
+    padding-bottom: 330px;
     padding-right: 3.5vw;
     width: 63%;
   }
@@ -89,7 +89,7 @@
   .activities-description .heading {
     font-weight: 700;
     font-size: 22px;
-    margin-top: 13vw;
+    /* margin-top: 13vw; */
   }
 
   .activities-description .subheading {
@@ -101,5 +101,13 @@
     font-weight: 300;
     font-size: 12px;
     line-height: 140%;
+  }
+}
+
+@media (max-width: 426px) {
+  .activities-description .heading {
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: 13vw;
   }
 }

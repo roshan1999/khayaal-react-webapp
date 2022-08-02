@@ -11,6 +11,7 @@ import Campaign from './Layout/Pages/Campaign';
 import OurTeams from './Layout/Pages/OurTeams/OurTeams';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Sidebar from './Layout/Navbar/Sidebar';
+import ScrollToTop from './hooks/ScrollToTop';
 
 
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
   return (
     <div className='app-container'>
       <Router>
+        <ScrollToTop />
         <LogoBox></LogoBox>
         <Navbar activateFunc={toggleActive} active={isActive}></Navbar>
         {isActive && <Sidebar active={isActive} activateFunc={toggleActive} />}
