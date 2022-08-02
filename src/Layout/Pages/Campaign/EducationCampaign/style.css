@@ -1,6 +1,5 @@
 .main-activity-banner {
   width: 75%;
-  height: 100%;
   margin: auto auto;
   display: flex;
   flex-flow: column wrap;

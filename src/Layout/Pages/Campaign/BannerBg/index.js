@@ -1,27 +1,50 @@
-import khayaalActivity2 from '../../../../assets/activity/khayaal-activity-2.png';
-import bgImg from '../../../../assets/activity/activity-bg-3.png';
+import bgImg from '../../../../assets/activity/activity-bg-1.png';
+import { useMediaQuery } from 'react-responsive';
+
 
 import './style.css';
 
-const BannerBg = () => {
+const BannerBg = (props) => {
+    const isMobileScreen = useMediaQuery({ query: '(max-width: 673px)' })
+
     return (
         <div className="banner-bg-parent-container">
-            <img src={bgImg} alt="" />
+            {props.activatedBg === "true" ?
+                <img src={bgImg} alt="khayaal-background"
+                    style={props.rotateBg === "true" && !isMobileScreen ?
+                        { transform: "rotateY(180deg)" }
+                        : null} />
+                : null}
             <div className="heading-image-container">
-                <img src={khayaalActivity2} alt="" />
+                <img src={props.activity.image} alt="activity" />
             </div>
             <div className="activities-description" >
-                <div className="heading" >
-                    Covid Taskforce
+                <div className="heading"
+                    style={
+                        props.activatedBg === "false" ?
+                            {
+                                color: "var(--primary-text-color)"
+                            } :
+                            null
+                    }>
+                    {props.activity.heading}
                 </div>
-                <div className="subheading">
-                    <q>A helping hand can save lives.</q>
+                <div className="subheading"
+                    style={
+                        props.activatedBg === "false" ? {
+                            color: "var(--info-secondary-color)"
+                        } : null}>
+                    <q>{props.activity.subheading}</q>
                 </div>
-                <div className="paragraph">
-                    <p>
-                        When you are determined to help, it's surprising the things that you can do!" We wanted to support our nation in the tough times of the COVID-19 outbreak and thus we helped the patients to find medicines, hospitals, oxygen cylinders etc. according to their requirements.
-                        <br />It was a tough time but we were glad to save so many lives.
+                <div className="paragraph"
+                    style={
+                        props.activatedBg === "false" ? {
+                            color: "var(--info-secondary-color)"
+                        } : null}>
+                    <p style={{ marginBottom: 0 }}>
+                        {props.activity.paragraph}
                     </p>
+                    <p style={{ marginTop: 0 }}>{props.activity.finalLine}</p>
                 </div>
             </div>
         </div >

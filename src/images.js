@@ -13,6 +13,10 @@ import khayaalOne from './assets/Homepage/AboutKhayaal/khayaal-about-1.png';
 import khayaalTwo from './assets/Homepage/AboutKhayaal/khayaal-about-2.png';
 import khayaalThree from './assets/Homepage/AboutKhayaal/khayaal-about-3.png';
 import EducationBanner from './assets/Campaign/EducationBanner/EducationBanner.jpg';
+import ActivityTwo from './assets/activity/khayaal-activity-3.png';
+import ActivityOne from './assets/activity/khayaal-activity-2.png';
+import ActivityThree from './assets/activity/khayaal-activity-6.jpeg';
+import ActivityFour from './assets/activity/women-at-khayaal.png';
 
 // Homepage images
 const memberImages = [
@@ -26,5 +30,8 @@ const getLandingAboutImages = [khayaalOne, khayaalTwo, khayaalThree];
 // Campaign page images
 const campaignBannerImages = [EducationBanner];
 
+// Activities
+const activitiesImages = [ActivityOne, ActivityTwo, ActivityThree, ActivityFour];
 
-export { memberImages, getLandingAboutImages, campaignBannerImages };
+
+export { memberImages, getLandingAboutImages, campaignBannerImages, activitiesImages };
