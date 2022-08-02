@@ -14,20 +14,14 @@ const Campaign = () => {
             <EducationCampaign />
             <ActivitySeperator />
             <ActivityButton />
-            {activities.map((curr, index) => {
-                return (
-                    <div key={index}>
-                        {index % 2 === 0 ?
-                            (index === 2 ?
-                                <BannerBg activatedBg="true" rotateBg="true" activity={curr} /> :
-                                <BannerBg activatedBg="true" activity={curr} />
-                            ) :
-                            <BannerBg activatedBg="false" activity={curr} />
-                        }
-                        {index < activities.length ? <div className="divider-line"></div> : null}
-                    </div>
-                )
-            })}
+            <BannerBg activatedBg="true" rotateBg="true" activity={activities[0]}/> :
+            <div className="divider-line"></div>
+            <BannerBg activatedBg="false" activity={activities[1]}/>
+            <div className="divider-line"></div>
+            <BannerBg activatedBg="true" rotateBg="true" activity={activities[2]}/>
+            <div className="divider-line"></div>
+            <BannerBg activatedBg="false" activity={activities[3]}/>
+            <div className="divider-line"></div>
         </div>
     );
 }

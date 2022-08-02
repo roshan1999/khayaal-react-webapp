@@ -15,8 +15,8 @@ import khayaalThree from './assets/Homepage/AboutKhayaal/khayaal-about-3.png';
 import EducationBanner from './assets/Campaign/EducationBanner/EducationBanner.jpg';
 import ActivityTwo from './assets/activity/khayaal-activity-3.png';
 import ActivityOne from './assets/activity/khayaal-activity-2.png';
-import ActivityThree from './assets/activity/khayaal-activity-6.jpeg';
-import ActivityFour from './assets/activity/women-at-khayaal.png';
+import ActivityFour from './assets/activity/khayaal-activity-6.jpeg';
+import ActivityThree from './assets/activity/women-at-khayaal.png';
 
 // Homepage images
 const memberImages = [

@@ -3,7 +3,7 @@ import { activitiesImages } from '../images.js';
 export function getActivities() {
     let activities = [];
     let heading = ["Covid Taskforce", "Donation Drive", "Women of Khayaal", "Feed the paws"];
-    let subheading = ["A helping hand can save lives.", "A piece of clothing, for peace of mind.", "Cool and <Calm></Calm>", "A wiggle for their paws",
+    let subheading = ["A helping hand can save lives.", "A piece of clothing, for peace of mind.", "Cool and Calm", "A wiggle for their paws",
     ];
     let paragraph = ["When you are determined to help, it's surprising the things that you can do! We wanted to support our nation in the tough times of the COVID-19 outbreak and thus we helped the patients to find medicines, hospitals, oxygen cylinders etc. according to their requirements.",
         "We only use 40% of our wardrobe. Why not utilize the 60% for individuals who sleep unclothed? So, Team Khayaal decided to express their solidarity with those less fortunate than us by donating clothes. We successfully donated more than 4000+ clothes in places like Calcutta, South Bombay, Andheri, Mulund, Kanpur, Uttarakhand, Andheri, thereby spreading coziness with others and bringing a smile to their face.",
