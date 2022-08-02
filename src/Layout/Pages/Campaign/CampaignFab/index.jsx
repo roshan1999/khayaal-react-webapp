@@ -1,5 +1,5 @@
 import './style.css';
-import Arrow from '../../../../assets/activity/arrow-up.png';
+import Arrow from '../../../../assets/Campaign/arrow-up.png';
 
 const CampaignFab = () => {
     return (
