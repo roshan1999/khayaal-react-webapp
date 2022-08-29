@@ -12,30 +12,45 @@ import OurTeams from './Layout/Pages/OurTeams/OurTeams';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Sidebar from './Layout/Navbar/Sidebar';
 import ScrollToTop from './hooks/ScrollToTop';
+import Modal from './Components/Modal/index';
+import { AnimatePresence } from 'framer-motion';
 
 
 export default function App() {
   const [isActive, setIsActive] = React.useState(false);
+  const [isDonateActive, setIsDonateActive] = React.useState(false);
   const toggleActive = (e) => {
     setIsActive(!isActive);
+  }
+  const activateDonate = (e) => {
+    console.log("Activated Donate function")
+    setIsDonateActive(true);
+  }
+  const deactivateDonate = (e) => {
+    console.log("Deactivated Donate function")
+    setIsDonateActive(false);
   }
 
   return (
     <div className='app-container'>
-      <Router>
-        <ScrollToTop />
-        <LogoBox></LogoBox>
-        <Navbar activateFunc={toggleActive} active={isActive}></Navbar>
-        {isActive && <Sidebar active={isActive} activateFunc={toggleActive} />}
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/activities" element={<Campaign />} />
-          <Route path="/members" element={<OurTeams />} />
-          <Route path="*" element={<Navigate to="/" />} />
-        </Routes>
-        <Footer />
-      </Router>
+      {isDonateActive && <Modal isActive={isDonateActive} deactivateDonate={deactivateDonate} activateDonate={activateDonate} />}
+      <AnimatePresence exitBeforeEnter onExitComplete={deactivateDonate}>
+        <Router location={window.location} key = {window.location.pathname}>
+          <ScrollToTop />
+          <LogoBox></LogoBox>
+          <Navbar activateFunc={toggleActive} active={isActive} activateDonate={activateDonate} deactivateDonate={deactivateDonate}></Navbar>
+          {isActive && <Sidebar active={isActive} activateFunc={toggleActive} />}
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/activities" element={<Campaign />} />
+            <Route path="/members" element={<OurTeams />} />
+            <Route path="*" element={<Navigate to="/" />} />
+            <Route path="/donate" element={<Modal />}></Route>
+          </Routes>
+          <Footer />
+        </Router>
+      </AnimatePresence>
     </div>
   );
 }

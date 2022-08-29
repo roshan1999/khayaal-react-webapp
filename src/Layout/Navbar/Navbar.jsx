@@ -19,7 +19,7 @@ export default function Navbar(props) {
                 </li>
             </ul >
             <div className='action-items'>
-                <button className="btn-filled">Donate Now</button>
+                <button className="btn-filled" onClick={()=>props.activateDonate()}>Donate Now</button>
                 <div className={!props.active ? "hamburger" : "hamburger is-active"} onClick={props.activateFunc}>
                     <span></span><span></span><span></span>
                 </div>
