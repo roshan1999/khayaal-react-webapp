@@ -13,7 +13,7 @@ const modal = {
     "visible": { "opacity": 1, "y": "300px", transition: { delay: 0.5 } }
 }
 
-const value = 10;
+var value = 10;
 
 const Modal = (props) => {
     return (
@@ -30,10 +30,21 @@ const Modal = (props) => {
                     >
                         <p> Your contribution is helping million other lives </p>
                         <button onClick={props.deactivateDonate}>Cancel</button>
-                        <button onClick={() => displayRazorpay(value)}>Donate</button>
+                        <button onClick={() => {
+                            
+                            // TODO: Temporary code to remove default amount
+                            value = parseInt(prompt("Enter an amount"));
+                            if (!value) {
+                                alert("Invalid amount");
+                            }
+                            else {
+                                displayRazorpay(value);
+                            }
+                        }}>Donate</button>
                     </motion.div>
-                </motion.div>)}
-        </AnimatePresence>
+                </motion.div>)
+            }
+        </AnimatePresence >
     )
 }
 
