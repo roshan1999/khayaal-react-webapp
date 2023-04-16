@@ -12,7 +12,7 @@ function Footer() {
         <div className="footer-main-container">
             <div className="footer-container">
                 <div className="footer-contact-container">
-                    <span>Contact Us!!</span>
+                    <span>Contact Us</span>
                     <span>9876543210</span>
                     <span>team@khayaal.org</span>
                 </div>
