@@ -1,6 +1,5 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import FilledButton from '../../Components/FilledButton/FilledButton';
 import './Navbar.css'
 
 export default function Navbar(props) {
@@ -20,8 +19,7 @@ export default function Navbar(props) {
                 </li>
             </ul >
             <div className='action-items'>
-                <FilledButton label="Donate Now" action="Popup" donateSectionRef={props.donateSectionRef} activateDonate={props.activateDonate} />
-                {/* <button className="btn-filled" onClick={()=>props.activateDonate()}>Donate Now</button> */}
+                <button className="btn-filled" onClick={()=>props.activateDonate()}>Donate Now</button>
                 <div className={!props.active ? "hamburger" : "hamburger is-active"} onClick={props.activateFunc}>
                     <span></span><span></span><span></span>
                 </div>
