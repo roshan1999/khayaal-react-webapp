@@ -15,23 +15,19 @@ const loadScript = (src) => {
     })
 }
 
-async function displayRazorpay(props) {
-    const { paymentAmount, paymentMessage } = props;
+async function displayRazorpay(value) {
     const res = await loadScript('https://checkout.razorpay.com/v1/checkout.js')
-
     if(!res) {
         alert("You are offline, failed to load payment");
         return;
     }
 
-    // console.log(paymentAmount, paymentMessage);
-
     const options = {
         key: "rzp_live_okvMCaMjo06vmy",
         currency: "INR",
-        amount: paymentAmount * 100,
+        amount: value * 100,
         name: "Donating to Khayaal NGO",
-        description: paymentMessage,
+        description: "Thanks for purchasing",
         handler: function(response) {
             alert(response.razorpay_payment_id);
             alert("Donation made successfully");
