@@ -1,4 +1,5 @@
 .donate-container {
+    padding-top: 10rem;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -13,7 +14,6 @@
     flex-basis: 55%;
     align-items: center;
     flex-direction: column;
-    flex-grow: 1;
 }
 
 .donate-text {
@@ -28,11 +28,11 @@
 }
 
 .donate-heading {
-    font-size: 2vmax;
+    font-size: 2vw;
 }
 
 .donate-description {
-    font-size: 1vmax;
+    font-size: 1vw;
 }
 
 .donate-box-container {
@@ -45,12 +45,11 @@
     font-style: normal;
     font-weight: 700;
     border-radius: 12px;
-    padding-right: 5%;
 }
 
 .donate-box {
-    width: 30vmax;
-    height: 40vmax;
+    width: 30vw;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     background-color: var(--background-color);
@@ -58,8 +57,8 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.1), 0px 4px 4px rgba(0, 0, 0, 0.1), 0px -4px 4px rgba(0, 0, 0, 0.1);
 }
 
-@media (min-width: 280px) and (max-width: 641px) {
-    /* Mobile devices */
+@media (max-width: 375px) {
+    /* Q. Why does the font look so small? */
     .donate-container {
         flex-direction: column;
     }
@@ -76,16 +75,72 @@
     }
     .donate-box {
         width: 60vw;
-        height: 40vh;
+        height: 30vh;
+        /* Q. Why is there a huge gap between text and donation box when this is applied? */
     }
 }
+
+/* .donate-box-float-page-track {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    background-color: var(--secondary-text-color);
+    border-radius: 12px;
+    flex: 1;
+} */
+
+/* .donate-box-tabs {
+    display: flex;
+    flex: 1;
+    background-color: var(--background-color);
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.5vw;
+} */
+
+/* .dot-container {
+    display: flex;
+    height: 100%;
+    width: 20%;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dot {
+    background-color: var(--primary-deactivate-color);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: flex;
+    cursor: pointer;
+} */
+
+/* .donate-box-tab {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    cursor: pointer;
+    align-self: stretch;
+    align-items: center;
+    background-color: var(--secondary-text-color);
+    color: var(--background-color);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+} */
+
+/* .donate-active-tab {
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+    cursor: default;
+} */
 
 .donate-box-content {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     color: var(--primary-text-color);
-    font-size: 1.2vmax;
+    font-size: 1.2vw;
 }
 
 .donate-form {
@@ -138,10 +193,6 @@
     color: var(--background-color);
 }
 
-input {
-    font-size: 1.2vmax;
-}
-
 .donate-custom-amount {
     display: flex;
     flex: 1;
@@ -180,19 +231,12 @@ input:focus {
 .donate-btn {
     display: flex;
     flex: 1;
-    padding: 0.5rem 1rem;
     border-radius: 25px;
     justify-content: center;
-    border: none;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
     align-self: center;
     align-items: center;
     background: var(--primary-dim-color);
-}
-
-.donate-btn:hover {
-    transform: translateY(-2px);
+    /* Q. Had set a width here but that ruined the mobile version. Without it mobile works but laptop looks funny */
 }
 
 .donate-btn-active {
@@ -207,7 +251,7 @@ input:focus {
     border-radius: 2.3vw;
     background-color: var(--background-color);
     font-family: Roboto;
-    font-size: 1vmax;
+    font-size: 1rem;
     font-weight: bold;
     padding: 1.3vw 3.3vw;
     border-radius: 888rem;
