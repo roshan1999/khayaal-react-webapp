@@ -22,4 +22,6 @@
   --secondary-border-color: #885F87;
   --info-secondary-color: #686868;
   --primary-dim-color: rgba(0,0,0,0.25);
+  --primary-deactivate-color: #A5A3A3;
+  --primary-error-color: #ff0033;
 }

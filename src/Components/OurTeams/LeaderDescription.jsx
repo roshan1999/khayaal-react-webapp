@@ -1,6 +1,6 @@
 import "./LeaderDescription.css"
 import React from 'react';
-import FilledButton from "../FilledButton/FilledButton";
+
 const LeaderDescription = (props) => {
     return (
         <div className="leader-desc">
