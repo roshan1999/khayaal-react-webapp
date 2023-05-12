@@ -1,5 +1,5 @@
 import rohan from './assets/Members/rohan.jpg';
-import sharmishtha from './assets/Members/sharmishtha.jpg';
+import sharmishtha from './assets/Members/sharmishtha_new.jpg';
 import pallak from './assets/Members/pallak.jpg';
 import uday from './assets/Members/uday.png';
 import viraj from './assets/Members/viraj.png';
