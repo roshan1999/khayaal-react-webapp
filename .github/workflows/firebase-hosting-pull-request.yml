@@ -11,9 +11,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
       - name: Install dependencies
-        run: npm install
+        run: npm install --prefix client
       - name: Build
-        run: npm run build
+        run: npm run build --prefix client
         env:
           CI: ""
       - uses: FirebaseExtended/action-hosting-deploy@v0
