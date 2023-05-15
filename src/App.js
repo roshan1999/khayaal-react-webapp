@@ -15,10 +15,10 @@ import ScrollToTop from './hooks/ScrollToTop';
 import Modal from './Components/Modal/index';
 import { AnimatePresence } from 'framer-motion';
 
-
 export default function App() {
   const [isActive, setIsActive] = React.useState(false);
   const [isDonateActive, setIsDonateActive] = React.useState(false);
+  const donateSectionRef = React.useRef(null);
   const toggleActive = (e) => {
     setIsActive(!isActive);
   }
@@ -33,20 +33,19 @@ export default function App() {
 
   return (
     <div className='app-container'>
-      {isDonateActive && <Modal isActive={isDonateActive} deactivateDonate={deactivateDonate} activateDonate={activateDonate} />}
+      {isDonateActive && <Modal isDonateActive={isDonateActive} deactivateDonate={deactivateDonate} />}
       <AnimatePresence exitBeforeEnter onExitComplete={deactivateDonate}>
         <Router location={window.location} key = {window.location.pathname}>
           <ScrollToTop />
           <LogoBox></LogoBox>
-          <Navbar activateFunc={toggleActive} active={isActive} activateDonate={activateDonate} deactivateDonate={deactivateDonate}></Navbar>
+          <Navbar activateFunc={toggleActive} active={isActive} activateDonate={activateDonate} deactivateDonate={deactivateDonate} donateSectionRef={donateSectionRef}></Navbar>
           {isActive && <Sidebar active={isActive} activateFunc={toggleActive} />}
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home donateSectionRef={donateSectionRef}/>} />
             <Route path="/about" element={<About />} />
             <Route path="/activities" element={<Campaign />} />
             <Route path="/members" element={<OurTeams />} />
             <Route path="*" element={<Navigate to="/" />} />
-            <Route path="/donate" element={<Modal />}></Route>
           </Routes>
           <Footer />
         </Router>
