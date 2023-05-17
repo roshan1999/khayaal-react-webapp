@@ -114,6 +114,27 @@
   transition: all 0.2s ease-in-out;
 }
 
+
+.footer-links-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.footer-links-container span:hover {
+  color: var(--secondary-text-color);
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+
+.footer-links-container span {
+  color: var(--primary-text-color);
+  font-size: 1rem;
+  margin: 0.5vmax;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
 @media (min-width: 768px) {
   .footer-container {
     display: flex;

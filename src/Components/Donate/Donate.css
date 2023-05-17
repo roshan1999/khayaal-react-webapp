@@ -78,7 +78,7 @@
 }
 
 .donate-description {
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.3rem;
     word-spacing: 0.3vw;
 }
@@ -113,6 +113,12 @@
     .donate-box {
         width: 60vmin;
         height: 40vmax;
+    }
+    .donate-btn {
+        padding: 1.3vw 3.3vw;
+        border-radius: 2.3vw;
+        font-family: Roboto;
+        font-size: 6vmax;
     }
 }
 
@@ -252,4 +258,17 @@ input:focus {
     border-radius: 888rem;
     margin: 0.5rem 0;
     cursor: pointer;
+}
+
+
+@media (min-width: 280px) and (max-width: 641px) {
+    .donate-btn {
+        font-size: 2vmax;
+    }
+    .join-btn {
+        font-size: 2vmax;
+    }
+    .donate-description {
+        font-size: 2vmax;
+    }
 }

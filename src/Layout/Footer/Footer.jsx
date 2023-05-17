@@ -7,13 +7,12 @@ import TwitterLogo from '../../assets/FooterLogo/twitter.png';
 import phoneIcon from "../../assets/FooterLogo/phone-call_filled.png"
 import emailIcon from "../../assets/FooterLogo/email_filled.png"
 import locationIcon from "../../assets/FooterLogo/location_filled.png"
+import LegalDocModal from '../../Components/LegalDocModal/LegalDocModal';
 
 
 function Footer() {
-    const legalDocLinks = {
-        privacy: "https://docs.google.com/document/d/1qLowbQwnAOD4AKuhays48RdhkH6BM9f7/edit?usp=drivesdk&ouid=105560095203525235771&rtpof=true&sd=true",
-        termsAndConditions: "https://docs.google.com/document/d/1DilKI5Vw98dpILeGXOcADehPVceo-cj0/edit?usp=drivesdk&ouid=105560095203525235771&rtpof=true&sd=true"
-    }
+    const [ isOpen, setIsOpen ] = React.useState(false)
+    const [ selectedDoc, setSelectedDoc ] = React.useState(null)
     const imgList = [{ img: FbLogo, link: "https://facebook.com/teamkhayaal" }, { img: IgLogo, link: "https://www.instagram.com/teamkhayaal/" }, { img: LinkedInLogo, link: "https://www.linkedin.com/company/khayaaldeliveringhope/" }, { img: TwitterLogo, link: "https://twitter.com/teamkhayaal" }];
     const contactDetails = {
         title: "Contact Us",
@@ -21,6 +20,16 @@ function Footer() {
         email: "team@khayaal.org",
         address: "3/60, Khayaal Foundation, Gomti Nagar, Vishal Khand, Gomti Nagar Rd, Lucknow 226010"
     }
+    const handleOpen = (event) => {
+        event.preventDefault();
+        setSelectedDoc(event.target.innerText);
+        setIsOpen(true);
+    }
+    const handleClose = () => {
+        setIsOpen(false);
+        document.body.style.overflow = "auto"; // restore scrollability to the body
+    }
+    
 
     return (
         <div className="footer-main-container">
@@ -58,10 +67,10 @@ function Footer() {
                 </div>
             </div>
             <div className='footer-links-container'>
-                <a target="_blank" rel="noopener noreferrer" href={legalDocLinks.privacy}>Privacy</a>
-                <a target="_blank" rel="noopener noreferrer" href={legalDocLinks.termsAndConditions}>Terms & Conditions</a>
-
+                <span onClick={handleOpen}>Privacy</span>
+                <span onClick={handleOpen}>Terms & Conditions</span>
             </div>
+            <LegalDocModal isOpen={isOpen} handleClose={handleClose} legalDoc={selectedDoc} />
         </div>
     )
 }
