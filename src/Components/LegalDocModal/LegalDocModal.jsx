@@ -39,7 +39,7 @@ const PrivacyList = [
 ]
 
 const LegalDocModal = (props) => {
-const [ mobileNavigationToggle, setMobileNavigationToggle ] = useState(false);
+const [ mobileNavigationToggle, setMobileNavigationToggle ] = useState(true);
 const [ selectedSection, setSelectedSection ] = useState(null);
 const [ selectedTitle, setSelectedTitle ] = useState(null);
 const { isOpen, handleClose, legalDoc } = props;
@@ -50,7 +50,8 @@ const { isOpen, handleClose, legalDoc } = props;
 
 const clearClose = () => {
     setSelectedSection(null);
-    setSelectedTitle(null)
+    setSelectedTitle(null);
+    setMobileNavigationToggle(true);
     handleClose();
 };
 

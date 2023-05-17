@@ -68,8 +68,9 @@
   right: 16px;
   padding: 8px 16px;
   border-radius: 4px;
-  background-color: var(--primary-dark);
-  color: var(--background-color);
+  font-weight: bolder;
+  background-color: var(--primary-light);
+  color: var(--primary-dark);
   cursor: pointer;
 }
 
@@ -79,8 +80,9 @@
   left: 16px;
   padding: 8px 16px;
   border-radius: 4px;
-  background-color: var(--primary-dark);
-  color: var(--background-color);
+  font-weight: bolder;
+  background-color: var(--primary-light);
+  color: var(--primary-dark);
   cursor: pointer;
 }
 
