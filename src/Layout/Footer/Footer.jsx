@@ -48,6 +48,14 @@ function Footer() {
                         <img src={locationIcon} alt='location-icon' style={{width: "1.3rem", height: "1.3rem"}} />
                         <span>{contactDetails.address}</span>
                     </span>
+                    {/* Adding Parent group name temporarily in footer 
+                    Later to be added in a separate Page */}
+                    {/* <br style={{lineHeight: "0px"}}/> */}
+                    <td style={{paddingTop: "2px"}} />
+                    <span>
+                        <img src={emailIcon} alt='' style={{width: "1.3rem", height: "1.3rem", visibility: 'hidden'}} />
+                        Bharat Gram Udhyog Vikas Samiti
+                    </span>
                 </div>
                 <div className="footer-logo-container">
                     {imgList.map((imgInfo, index) => {
